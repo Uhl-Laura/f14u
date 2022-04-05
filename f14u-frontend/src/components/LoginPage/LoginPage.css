@@ -1,0 +1,39 @@
+body {
+    height: 100%;
+    background-image: url('../../assets/loginpage.jpg');
+}
+
+.login-background {
+    background-image: url('../../assets/loginpage.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+.card{
+    margin-right: auto;
+    margin-left: auto;
+    width: 250px;
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    height: 300px;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+}
+.field{
+    display:block;
+}
