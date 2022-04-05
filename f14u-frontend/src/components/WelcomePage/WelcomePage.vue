@@ -1,5 +1,5 @@
 <template>
-  <div> 
+  <div style="color:white"> 
     Welcome Page 
     <div>
       <PrimeButton label = "Go to login" @click="redirectToLogin"/>

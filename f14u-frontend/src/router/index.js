@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import WelcomePage from '../components/WelcomePage/WelcomePage.vue'
-import LoginPage from '../components/LoginPage/LoginPage'
+import WelcomePage from   '../components/WelcomePage/WelcomePage.vue'
+import LoginPage from     '../components/LoginPage/LoginPage.vue'
+import RegisterPage from  '../components/RegisterPage/RegisterPage.vue'
+
 
 Vue.use(VueRouter)
 
@@ -13,9 +15,14 @@ Vue.use(VueRouter)
     component: WelcomePage
   },
   {
-    path: '/login',
+    path: '/Login',
     name: 'Login',
     component: LoginPage
+  },
+  {
+    path: '/Register',
+    name: 'Register',
+    component: RegisterPage
   }
 ]
 
