@@ -2,14 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using f14u_server.Models;
+using f14u_server.Repositories;
+using f14u_server.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.Edm;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MySqlConnector;
 
 namespace f14u_server
 {
@@ -26,6 +31,10 @@ namespace f14u_server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors();
+            services.AddControllers();
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+            services.AddScoped<CredentialsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +55,10 @@ namespace f14u_server
             {
                 endpoints.MapControllers();
             });
+            app.UseCors(builder => builder
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
         }
     }
 }
