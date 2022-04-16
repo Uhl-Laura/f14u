@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import WelcomePage from   '../components/WelcomePage/WelcomePage.vue'
 import LoginPage from     '../components/LoginPage/LoginPage.vue'
 import RegisterPage from  '../components/RegisterPage/RegisterPage.vue'
-
+import HeaderPage from  '../components/HeaderPage/HeaderPage.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +23,11 @@ Vue.use(VueRouter)
     path: '/Register',
     name: 'Register',
     component: RegisterPage
+  },
+  {
+    path: '/Header',
+    name: 'Header',
+    component: HeaderPage
   }
 ]
 

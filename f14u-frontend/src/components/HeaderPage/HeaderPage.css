@@ -1,0 +1,25 @@
+
+.logout {
+  height: 50px;
+  margin-left: auto;
+}
+
+.f1logo { 
+    width: 100%;
+    max-width: 170px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 7px solid red;
+    padding: 10px;
+
+}
+
+.LogoButton{
+    display: flex;
+    align-items: center;
+}
