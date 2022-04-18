@@ -29,5 +29,23 @@ namespace f14u_server.Controllers
             }
             return credentials;
         }
+        [HttpPost("login")]
+        public ActionResult<bool> Login(Credentials credentials)
+        {
+            try
+            {
+                return CredentialsService.VerifyLoginCredentials(credentials);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return false;
+        }
+        [HttpPost("register")]
+        public ActionResult<bool> Register(RegisterInformation registerInformation)
+        {
+            return false;
+        }
     }
 }
