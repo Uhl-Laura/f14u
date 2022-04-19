@@ -6,8 +6,8 @@
       label = "Log Out"
       class="logout"
       />
-      </div>
-   
+      </div> 
+      
   </div>
 </template>
 

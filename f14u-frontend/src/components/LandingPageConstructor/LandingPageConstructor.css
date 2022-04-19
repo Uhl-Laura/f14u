@@ -1,0 +1,54 @@
+.hamiltondriver { 
+    width: 100%;
+    max-width: 400px;
+    top: 50%;
+    left: 20%;
+    transform: translateX(-0%) translateY(70%);;
+}
+.russelldriver { 
+    width: 100%;
+    max-width: 400px;
+    top: 50%;   
+    left: 20%;
+    transform: translateX(-100%) translateY(180%);;
+}
+
+.carinfoH{
+    width: 100%;
+    max-width: 120px;
+    right: -70%;
+    transform: translateX(-90%) translateY(330%);;
+   
+}
+
+.driverinfoH{
+    width: 100%;
+    max-width: 120px;
+    right: -75%;
+    transform: translateX(-90%) translateY(330%);;
+}
+
+.carinfoR{
+    width: 100%;
+    max-width: 120px;
+    right: -70%;
+    transform: translateX(-90%) translateY(950%);;
+   
+}     
+
+.driverinfoR{
+    width: 100%;
+    max-width: 120px;
+    right: -75%;
+    transform: translateX(-90%) translateY(950%);;
+}
+
+.textbox{
+    width: 100%;
+    max-width: 1050px;
+    max-height: 1000px;
+    right: -10%;
+    left: 50%;
+    top: 50%;
+    color: red;
+}
