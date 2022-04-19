@@ -5,6 +5,7 @@ import WelcomePage from   '../components/WelcomePage/WelcomePage.vue'
 import LoginPage from     '../components/LoginPage/LoginPage.vue'
 import RegisterPage from  '../components/RegisterPage/RegisterPage.vue'
 import HeaderPage from  '../components/HeaderPage/HeaderPage.vue'
+import StewardLandingPage from '../components/StewardLandingPage/StewardLandingPage.vue'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ Vue.use(VueRouter)
     path: '/Header',
     name: 'Header',
     component: HeaderPage
+  },
+  {
+    path: '/StewardLandingPage',
+    name: 'StewardLandingPage',
+    component: StewardLandingPage
   }
 ]
 

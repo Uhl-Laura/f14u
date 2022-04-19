@@ -19,14 +19,5 @@ namespace f14u_server.Services
         {
             return Repository.CredentialsRepository.GetAll().ToList();
         }
-        public bool VerifyLoginCredentials(Credentials credentials)
-        {
-            var storedCredentials = Repository.CredentialsRepository.GetAll().Where(item => item.Username == credentials.Username).FirstOrDefault();
-            if (credentials == null)
-                return false;
-            if (storedCredentials.Password == credentials.Password)
-                return true;
-            return false;
-        }
     }
 }

@@ -1,9 +1,9 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
 
 namespace f14u_server.Models
 {
@@ -12,9 +12,15 @@ namespace f14u_server.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
-        [BsonElement("username")]
-        public string Username { get; set; }
-        [BsonElement("password")]
-        public string Password { get; set; }
+        [BsonElement("car")]
+        public string car { get; set; }
+        [BsonElement("change")]
+        public string change { get; set; }
+        [BsonElement("constructor")]
+        public string constructor { get; set; }
+        [BsonElement("count")]
+        public int count { get; set; }
+        [BsonElement("driver")]
+        public string driver { get; set; }
     }
 }
