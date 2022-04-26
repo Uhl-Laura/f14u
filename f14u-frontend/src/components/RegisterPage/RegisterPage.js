@@ -1,57 +1,59 @@
+import { Constants } from "@/constants";
+import { getData, postData } from "@/helpers/DataGetters";
+
 export default {
     data(){
         return{
             selectedRole: null,
-            role: [
-                {
-                    name: 'Driver',
-                    code: 'D',
-                    team: [
-                        {teamname:'Ferrari',code:'FE'},
-                        {teamname:'Mercedes',code:'ME'},
-                        {teamname:'Red Bull Racing',code:"RB"},
-                        {teamname:'Apline',code:'AL'},
-                        {teamname:'Hass F1 Team',code:'HA'},
-                        {teamname:'Alfa Romeo',code:'AR'},
-                        {teamname:'AlphaTauri',code:'AT'},
-                        {teamname:'McLaren',code:'MC'},
-                        {teamname:'Aston Martion',code:'AM'},
-                        {teamname:'Williams',code:'WL'}
-                    ]
-                },
-                {
-                    name: 'Constructor',
-                    code: 'TM',
-                    team: [
-                        {teamname:'Ferrari',code:'FE'},
-                        {teamname:'Mercedes',code:'ME'},
-                        {teamname:'Red Bull Racing',code:"RB"},
-                        {teamname:'Apline',code:'AL'},
-                        {teamname:'Hass F1 Team',code:'HA'},
-                        {teamname:'Alfa Romeo',code:'AR'},
-                        {teamname:'AlphaTauri',code:'AT'},
-                        {teamname:'McLaren',code:'MC'},
-                        {teamname:'Aston Martion',code:'AM'},
-                        {teamname:'Williams',code:'WL'}
-                    ]
-                },
-                {
-                    name: 'Stuard',
-                    code: 'S',
-                    team: [
-                        {teamname:'Mechanical Stuard',code:'MS'},
-                        {teamname:'Track Stuard',code:'TS'}
-                    ]
-                }
-            ]
+            roles: [
+                {name: 'Steward', value:'steward'},
+                {name: 'Driver', value: 'driver'},
+                {name: 'Constructor', value: 'team'}
+            ],
+            stewardRoleSelected: false,
+            driverRoleSelected: false,
+            constructorRoleSelected: false,
+            username: null,
+            password: null,
+            stewardName: null,
+            firstDriverName: null, 
+            secondDriverName: null,
+            teamName: null,
+            isUsernameTaken: false
         }
     },
     mount(){
 
     },
     methods:{
-        
-    
+        updateRoleBooleans() { 
+            console.log("Selected role is: " + this.selectedRole.name);
+            this.stewardRoleSelected = this.selectedRole.value == 'steward' ? true : false;
+            this.driverRoleSelected = this.selectedRole.value == 'driver' ? true : false;
+            this.constructorRoleSelected = this.selectedRole.value == 'team' ? true : false;
+        },
+        register() {
+            if(this.driverRoleSelected) this.registerDriver();
+            else if(this.stewardRoleSelected) this.registerSteward();
+            else if(this.constructorRoleSelected) this.registerConstructor();
+        },
+        registerDriver(){
 
+        },
+        async registerSteward(){
+            var stewardInformation = {
+                username: this.username,
+                name: this.stewardName,
+                password: this.password
+            }
+            var response = await postData(Constants.CREDENTIALS_URL + "/register/steward", JSON.stringify(stewardInformation));
+            console.log(response);
+        },
+        registerConstructor(){
+
+        },
+        async checkUsernameAvailability() {
+            this.isUsernameTaken = await getData(Constants.CREDENTIALS_URL, "/users/" + this.username);
+        }
     }
 }

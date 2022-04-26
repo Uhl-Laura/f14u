@@ -8,16 +8,9 @@
       "TRACE",
       "DEBUG",
       "NETCOREAPP",
-      "NETCOREAPP3_1",
-      "NETCOREAPP1_0_OR_GREATER",
-      "NETCOREAPP1_1_OR_GREATER",
-      "NETCOREAPP2_0_OR_GREATER",
-      "NETCOREAPP2_1_OR_GREATER",
-      "NETCOREAPP2_2_OR_GREATER",
-      "NETCOREAPP3_0_OR_GREATER",
-      "NETCOREAPP3_1_OR_GREATER"
+      "NETCOREAPP3_1"
     ],
-    "languageVersion": "8.0",
+    "languageVersion": "",
     "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,
@@ -185,7 +178,6 @@
           "System.Data": "4.0.0.0",
           "System.Diagnostics.Contracts": "4.0.4.0",
           "System.Diagnostics.Debug": "4.1.2.0",
-          "System.Diagnostics.EventLog": "4.0.2.0",
           "System.Diagnostics.FileVersionInfo": "4.0.4.0",
           "System.Diagnostics.Process": "4.2.2.0",
           "System.Diagnostics.StackTrace": "4.1.2.0",
@@ -211,7 +203,6 @@
           "System.IO.FileSystem.Watcher": "4.1.2.0",
           "System.IO.IsolatedStorage": "4.1.2.0",
           "System.IO.MemoryMappedFiles": "4.1.2.0",
-          "System.IO.Pipelines": "4.0.2.0",
           "System.IO.Pipes": "4.1.2.0",
           "System.IO.UnmanagedMemoryStream": "4.1.2.0",
           "System.Linq": "4.2.2.0",
@@ -268,14 +259,11 @@
           "System.Runtime.Serialization.Xml": "4.1.5.0",
           "System.Security.Claims": "4.1.2.0",
           "System.Security.Cryptography.Algorithms": "4.3.2.0",
-          "System.Security.Cryptography.Cng": "4.3.3.0",
           "System.Security.Cryptography.Csp": "4.1.2.0",
           "System.Security.Cryptography.Encoding": "4.1.2.0",
           "System.Security.Cryptography.Primitives": "4.1.2.0",
           "System.Security.Cryptography.X509Certificates": "4.2.2.0",
-          "System.Security.Cryptography.Xml": "4.0.3.0",
           "System.Security": "4.0.0.0",
-          "System.Security.Permissions": "4.0.3.0",
           "System.Security.Principal": "4.1.2.0",
           "System.Security.SecureString": "4.1.2.0",
           "System.ServiceModel.Web": "4.0.0.0",
@@ -302,7 +290,6 @@
           "System.Web": "4.0.0.0",
           "System.Web.HttpUtility": "4.0.2.0",
           "System.Windows": "4.0.0.0",
-          "System.Windows.Extensions": "4.0.1.0",
           "System.Xml": "4.0.0.0",
           "System.Xml.Linq": "4.0.0.0",
           "System.Xml.ReaderWriter": "4.2.2.0",
@@ -1696,12 +1683,6 @@
         },
         "compileOnly": true
       },
-      "System.Diagnostics.EventLog/4.0.2.0": {
-        "compile": {
-          "System.Diagnostics.EventLog.dll": {}
-        },
-        "compileOnly": true
-      },
       "System.Diagnostics.FileVersionInfo/4.0.4.0": {
         "compile": {
           "System.Diagnostics.FileVersionInfo.dll": {}
@@ -1849,12 +1830,6 @@
       "System.IO.MemoryMappedFiles/4.1.2.0": {
         "compile": {
           "System.IO.MemoryMappedFiles.dll": {}
-        },
-        "compileOnly": true
-      },
-      "System.IO.Pipelines/4.0.2.0": {
-        "compile": {
-          "System.IO.Pipelines.dll": {}
         },
         "compileOnly": true
       },
@@ -2194,12 +2169,6 @@
         },
         "compileOnly": true
       },
-      "System.Security.Cryptography.Cng/4.3.3.0": {
-        "compile": {
-          "System.Security.Cryptography.Cng.dll": {}
-        },
-        "compileOnly": true
-      },
       "System.Security.Cryptography.Csp/4.1.2.0": {
         "compile": {
           "System.Security.Cryptography.Csp.dll": {}
@@ -2224,21 +2193,9 @@
         },
         "compileOnly": true
       },
-      "System.Security.Cryptography.Xml/4.0.3.0": {
-        "compile": {
-          "System.Security.Cryptography.Xml.dll": {}
-        },
-        "compileOnly": true
-      },
       "System.Security/4.0.0.0": {
         "compile": {
           "System.Security.dll": {}
-        },
-        "compileOnly": true
-      },
-      "System.Security.Permissions/4.0.3.0": {
-        "compile": {
-          "System.Security.Permissions.dll": {}
         },
         "compileOnly": true
       },
@@ -2395,12 +2352,6 @@
       "System.Windows/4.0.0.0": {
         "compile": {
           "System.Windows.dll": {}
-        },
-        "compileOnly": true
-      },
-      "System.Windows.Extensions/4.0.1.0": {
-        "compile": {
-          "System.Windows.Extensions.dll": {}
         },
         "compileOnly": true
       },
@@ -3427,11 +3378,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Diagnostics.EventLog/4.0.2.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.Diagnostics.FileVersionInfo/4.0.4.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -3553,11 +3499,6 @@
       "sha512": ""
     },
     "System.IO.MemoryMappedFiles/4.1.2.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.IO.Pipelines/4.0.2.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -3842,11 +3783,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Security.Cryptography.Cng/4.3.3.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.Security.Cryptography.Csp/4.1.2.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -3867,17 +3803,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Security.Cryptography.Xml/4.0.3.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.Security/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Security.Permissions/4.0.3.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4008,11 +3934,6 @@
       "sha512": ""
     },
     "System.Windows/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Windows.Extensions/4.0.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

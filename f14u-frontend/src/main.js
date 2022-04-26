@@ -14,7 +14,7 @@ import Button from 'primevue/button';
 import Card from 'primevue/card';
 import InputText from 'primevue/inputtext';
 import Password from 'primevue/password';
-import CascadeSelect from 'primevue/cascadeselect';
+import Dropdown from 'primevue/dropdown';
 
 Vue.config.productionTip = false
 Vue.component("WelcomePage", WelcomePage);
@@ -24,7 +24,7 @@ Vue.component("PrimeButton", Button);
 Vue.component("PrimeCard", Card);
 Vue.component("InputText",InputText);
 Vue.component("PrimePassword",Password);
-Vue.component("CascadeSelect",CascadeSelect);
+Vue.component("PrimeDropdown",Dropdown);
 
 new Vue({
   router,

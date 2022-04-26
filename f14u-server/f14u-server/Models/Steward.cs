@@ -14,6 +14,8 @@ namespace f14u_server.Models
         public string Id { get; set; }
         [BsonElement("name")]
         public string Name { get; set; }
+        [BsonElement("username")]
+        public string Username { get; set; }
   
     }
 }

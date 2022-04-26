@@ -10,5 +10,7 @@ namespace f14u_server
         public static string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
         public static string databaseName = Environment.GetEnvironmentVariable("DATABASE_NAME");
         public static string credentialsTableName = Environment.GetEnvironmentVariable("CREDENTIALS_TABLE_NAME");
+        public static string stewardsTableName = Environment.GetEnvironmentVariable("STEWARDS_TABLE_NAME");
+        public static string driversTableName = Environment.GetEnvironmentVariable("DRIVERS_TABLE_NAME");
     }
 }

@@ -8,5 +8,7 @@ namespace f14u_server.Repositories
     public interface IRepositoryWrapper
     {
         public ICredentialsRepository CredentialsRepository { get; }
+        public IStewardsRepository StewardsRepository { get; }
+        public IDriversRepository DriversRepository { get; }
     }
 }
