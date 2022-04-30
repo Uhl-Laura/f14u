@@ -28,6 +28,9 @@
               <InputText v-model="firstDriverName" v-if="constructorRoleSelected"/>
               <h5 class="input-box-label" v-if="constructorRoleSelected">Second Driver Name</h5>
               <InputText v-model="secondDriverName" v-if="constructorRoleSelected"/>
+              <h5 class="input-box-label" v-if="driverRoleSelected">Select your name</h5>
+              <PrimeDropdown v-model="selectedDriverName" v-if="driverRoleSelected" :options="availableDriverNames" optionLabel="driverName" @change="updateDriverMessage"/>
+              <h5 v-if="displayDriverMessage && driverRoleSelected"> {{driverMessage}} </h5>
               <h5>
               <PrimeButton label="Submit" class="p-button-raised p-button-secondary p-button-text:color white" @click="register"/>
               </h5>

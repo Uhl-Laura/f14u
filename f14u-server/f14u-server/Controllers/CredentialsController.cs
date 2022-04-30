@@ -54,9 +54,24 @@ namespace f14u_server.Controllers
                 return StatusCode(500);
             }
         }
+        [HttpGet("users/drivers/unregistered")]
+        public ActionResult<List<Driver>> GetUnregisteredDrivers()
+        {
+            Console.WriteLine("GET request received for unregistered drivers");
+            try
+            {
+                return CredentialsService.GetUnregisteredDrivers();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500);
+            }
+        }
         [HttpPost("login")]
         public ActionResult<string> Login(Credentials credentials)
         {
+            Console.WriteLine("POST Login request received.");
             try
             {
                 return CredentialsService.VerifyLoginCredentials(credentials);
@@ -70,22 +85,19 @@ namespace f14u_server.Controllers
         [HttpPost("register/{role}")]
         public async Task<ActionResult> Register(RegistrationInformation registrationInformation, string role)
         {
-            Console.WriteLine("Register request is received.");
+            Console.WriteLine("POST Register request received.");
             try
             {
                 Console.WriteLine("Register request is processing...");
-                if (await CredentialsService.RegisterUser(registrationInformation, role)) 
-                {
-                    Console.WriteLine("Register request completed.");
-                    return Ok("Successfully registered");
-                }
+                await CredentialsService.RegisterUser(registrationInformation, role);
+                Console.WriteLine("Register request completed.");
+                return Ok("Successfully registered");
             }
             catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 return StatusCode(500);
             }
-            return BadRequest();
         }
     }
 }

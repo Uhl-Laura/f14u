@@ -19,11 +19,15 @@ export default {
             firstDriverName: null, 
             secondDriverName: null,
             teamName: null,
-            isUsernameTaken: false
+            isUsernameTaken: false,
+            selectedDriverName: null, 
+            availableDriverNames: [],
+            displayDriverMessage: false,
+            driverMessage: null
         }
     },
-    mount(){
-
+    async mounted(){
+        this.availableDriverNames = await getData(Constants.CREDENTIALS_URL, "/users/drivers/unregistered");
     },
     methods:{
         updateRoleBooleans() { 
@@ -37,8 +41,15 @@ export default {
             else if(this.stewardRoleSelected) this.registerSteward();
             else if(this.constructorRoleSelected) this.registerConstructor();
         },
-        registerDriver(){
-
+        async registerDriver(){
+            var driverInformation = {
+                username: this.username,
+                name: this.selectedDriverName.driverName,
+                password: this.password,
+                teamName: this.selectedDriverName.teamName
+            }
+            var response = await postData(Constants.CREDENTIALS_URL + "/register/driver", JSON.stringify(driverInformation));
+            console.log(response);
         },
         async registerSteward(){
             var stewardInformation = {
@@ -49,11 +60,22 @@ export default {
             var response = await postData(Constants.CREDENTIALS_URL + "/register/steward", JSON.stringify(stewardInformation));
             console.log(response);
         },
-        registerConstructor(){
-
+        async registerConstructor(){
+            var constructorInformation = {
+                username: this.username, 
+                password: this.password, 
+                firstDriverName: this.firstDriverName,
+                secondDriverName: this.secondDriverName
+            };
+            var response = await postData(Constants.CREDENTIALS_URL + "/register/constructor", JSON.stringify(constructorInformation));
+            console.log(response);
         },
         async checkUsernameAvailability() {
             this.isUsernameTaken = await getData(Constants.CREDENTIALS_URL, "/users/" + this.username);
+        },
+        updateDriverMessage() {
+            this.driverMessage = "Your team is: " + this.selectedDriverName.teamName;
+            this.displayDriverMessage = true;
         }
     }
 }

@@ -11,9 +11,11 @@ namespace f14u_server.Services
     public class CredentialsService
     {
         public IRepositoryWrapper Repository { get; set; }
-        public CredentialsService(IRepositoryWrapper repository)
+        public ConstructorService ConstructorService { get; set; }
+        public CredentialsService(IRepositoryWrapper repository, ConstructorService constructorService)
         {
             Repository = repository;
+            ConstructorService = constructorService;
         }
         public List<Credentials> GetCredentials()
         {
@@ -37,15 +39,24 @@ namespace f14u_server.Services
                 return storedCredentials.Role;
             return null;
         }
-        public async Task<bool> RegisterUser(RegistrationInformation registrationInformation, string role)
+        public List<Driver> GetUnregisteredDrivers()
         {
-            return role switch
+            return Repository.DriversRepository.GetAll().Where(item => item.Username == null).ToList();
+        }
+        public async Task RegisterUser(RegistrationInformation registrationInformation, string role)
+        {
+            switch(role)
             {
-                "steward" => await RegisterSteward(registrationInformation),
-                "constructor" => await RegisterConstructor(registrationInformation),
-                "driver" => await RegisterDriver(registrationInformation),
-                _ => false,
-            };
+                case "steward":
+                    await RegisterSteward(registrationInformation);
+                    break;
+                case "constructor":
+                    await RegisterConstructor(registrationInformation);
+                    break;
+                case "driver":
+                    await RegisterDriver(registrationInformation);
+                    break;
+            }
         }
         public async Task<bool> RegisterSteward(RegistrationInformation registrationInformation)
         {
@@ -64,11 +75,18 @@ namespace f14u_server.Services
             await Repository.StewardsRepository.InsertOneAsync(steward);
             return true;
         }
-        public async Task<bool> RegisterConstructor(RegistrationInformation registrationInformation)
+        public async Task RegisterConstructor(RegistrationInformation registrationInformation)
         {
-            return false;
+            Credentials credentials = new Credentials
+            {
+                Username = registrationInformation.Username,
+                Password = registrationInformation.Password,
+                Role = "constructor"
+            };
+            await Repository.CredentialsRepository.InsertOneAsync(credentials);
+            await ConstructorService.CreateNewConstructor(registrationInformation.TeamName, registrationInformation.Username, registrationInformation.FirstDriverName, registrationInformation.SecondDriverName);
         }
-        public async Task<bool> RegisterDriver(RegistrationInformation registrationInformation)
+        public async Task RegisterDriver(RegistrationInformation registrationInformation)
         {
             Credentials credentials = new Credentials
             {
@@ -76,15 +94,8 @@ namespace f14u_server.Services
                 Password = registrationInformation.Password,
                 Role = "driver"
             };
-            Driver driver = new Driver
-            {
-                DriverName = registrationInformation.Name,
-                Username = registrationInformation.Username,
-                TeamName = registrationInformation.TeamName,
-            };
             await Repository.CredentialsRepository.InsertOneAsync(credentials);
-            await Repository.DriversRepository.InsertOneAsync(driver);
-            return true;
+            await ConstructorService.AddNewDriver(registrationInformation.Name, registrationInformation.Username, registrationInformation.TeamName);
         }
     }
 }

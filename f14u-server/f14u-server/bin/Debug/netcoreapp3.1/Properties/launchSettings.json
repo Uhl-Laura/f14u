@@ -28,7 +28,10 @@
         "DATABASE_NAME": "f14u",
         "CREDENTIALS_TABLE_NAME": "Credentials",
         "STEWARDS_TABLE_NAME": "Stewards",
-        "DRIVERS_TABLE_NAME": "Drivers"
+        "DRIVERS_TABLE_NAME": "Drivers",
+        "CONSTRUCTORS_TABLE_NAME": "Constructors",
+        "CARS_TABLE_NAME": "Cars",
+        "CAR_COMPONENTS_TABLE_NAME": "CarComponents"
       }
     }
   }

@@ -12,5 +12,8 @@ namespace f14u_server
         public static string credentialsTableName = Environment.GetEnvironmentVariable("CREDENTIALS_TABLE_NAME");
         public static string stewardsTableName = Environment.GetEnvironmentVariable("STEWARDS_TABLE_NAME");
         public static string driversTableName = Environment.GetEnvironmentVariable("DRIVERS_TABLE_NAME");
+        public static string constructorsTableName = Environment.GetEnvironmentVariable("CONSTRUCTORS_TABLE_NAME");
+        public static string carsTableName = Environment.GetEnvironmentVariable("CARS_TABLE_NAME");
+        public static string carComponentsTableName = Environment.GetEnvironmentVariable("CAR_COMPONENTS_TABLE_NAME");
     }
 }

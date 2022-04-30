@@ -10,5 +10,8 @@ namespace f14u_server.Repositories
         public ICredentialsRepository CredentialsRepository { get; }
         public IStewardsRepository StewardsRepository { get; }
         public IDriversRepository DriversRepository { get; }
+        public IConstructorsRepository ConstructorsRepository { get; }
+        public ICarsRepository CarsRepository { get; }
+        public ICarComponentsRepository CarComponentsRepository { get; }
     }
 }
