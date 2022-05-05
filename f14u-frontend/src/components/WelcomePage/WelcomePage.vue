@@ -3,6 +3,8 @@
     Welcome Page 
     <div>
       <PrimeButton label = "Go to login" @click="redirectToLogin"/>
+      <PrimeButton label = "AddPopup" @click="showPopup()"/>
+      <CarPopup ref="carPopup"/>
     </div>
   </div>
 </template>
