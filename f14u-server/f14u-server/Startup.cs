@@ -35,6 +35,8 @@ namespace f14u_server
             services.AddControllers();
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
             services.AddScoped<CredentialsService>();
+            services.AddScoped<ConstructorService>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
