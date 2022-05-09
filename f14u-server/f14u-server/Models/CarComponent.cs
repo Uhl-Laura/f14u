@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace f14u_server.Models
 {
     public class CarComponent
-    {
-        [BsonId]
+    {   [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
         [BsonElement("team")]
@@ -17,7 +16,7 @@ namespace f14u_server.Models
         [BsonElement("driver")]
         public string DriverName { get; set; }
         [BsonElement("availabilitycount")]
-        public int Avaibailitycount { get; set; }
+        public int AvaibailityCount { get; set; }
         [BsonElement("name")]
         public string NameComponent { get; set; }
     }
