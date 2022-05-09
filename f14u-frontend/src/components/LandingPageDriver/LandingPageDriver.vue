@@ -1,30 +1,48 @@
 
 <template>
-    <div>
+    <div class="Page">
         <HeaderPage></HeaderPage>
-        <img src="../../assets/hamiltondriver.png" class="hamiltondriver">
-        <img src="../../assets/russelldriver.png" class="russelldriver">
-        <div class="Hambutton"> 
-                <PrimeButton 
+
+        <div class="Driver">
+        <img src="https://i.imgur.com/prOm0kPh.jpg" class="DriverImage">
+
+           <div class="DriverInfo">
+               
+            <div class="DriverText" >
+                text
+
+            </div>
+            <PrimeButton 
             label = "Car Info"
-            class="carinfoH"
-            />
-        </div>   
-        <div class="Rusbutton"> 
-                <PrimeButton 
+             @click="showPopup()"
+            class="DriverButton"
+            /> 
+             <CarPopup ref="carPopup"/>
+            </div>
+            </div>
+        <div class="Driver">
+        <img src="https://i.imgur.com/prOm0kPh.jpg" class="DriverImage">
+
+        <div class="DriverInfo"> 
+
+            <div class="DriverText" >
+                text
+
+            </div>
+
+            <PrimeButton 
             label = "Car Info"
-            class="carinfoR"  
+            @click="showPopup()"
+            class="DriverButton"  
             />
+            <CarPopup ref="carPopup"/>
+        </div>
+        </div>
             
-        <TextareaBox
-            class="textarea"
-        />
-         <TextareaBox
-            class="textarea2"
-        />
-          </div>
     </div>  
 </template>
+
+
 
 <script src='./LandingPageDriver.js'></script>
 <style src='./LandingPageDriver.css'></style>

@@ -1,54 +1,24 @@
-.hamiltondriver { 
-    width: 100%;
-    max-width: 400px;
-    top: 50%;
-    left: 20%;
-    transform: translateX(-0%) translateY(70%);;
-}
-.russelldriver { 
-    width: 100%;
-    max-width: 400px;
-    top: 50%;   
-    left: 20%;
-    transform: translateX(-100%) translateY(180%);;
+
+.DriverInfoC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.carinfoH{
+.doubleB{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
     width: 100%;
-    max-width: 120px;
-    right: -70%;
-    transform: translateX(-90%) translateY(330%);;
-   
+    margin-top: 10px;
+  
 }
 
-.driverinfoH{
-    width: 100%;
-    max-width: 120px;
-    right: -75%;
-    transform: translateX(-90%) translateY(330%);;
-}
 
-.carinfoR{
+.DriverButton{
     width: 100%;
-    max-width: 120px;
-    right: -70%;
-    transform: translateX(-90%) translateY(950%);;
-   
-}     
-
-.driverinfoR{
-    width: 100%;
-    max-width: 120px;
-    right: -75%;
-    transform: translateX(-90%) translateY(950%);;
-}
-
-.textbox{
-    width: 100%;
-    max-width: 1050px;
-    max-height: 1000px;
-    right: -10%;
-    left: 50%;
-    top: 50%;
-    color: red;
+    max-width: 110px;
+    margin-top: 16px;
 }

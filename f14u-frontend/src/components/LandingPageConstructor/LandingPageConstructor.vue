@@ -1,30 +1,60 @@
+
 <template>
-    <div>
+    <div class="Page">
         <HeaderPage></HeaderPage>
-        <img src="../../assets/hamiltondriver.png" class="hamiltondriver">
-        <img src="../../assets/russelldriver.png" class="russelldriver">
-        <div class="Hambutton">       
-                <PrimeButton 
-            label = "Car Info"
-            class="carinfoH"
-            />   
-            <PrimeButton 
-            label = "Driver Info"
-            class="driverinfoH"
-            />
-        </div>
-        <div class="Rusbutton"> 
-                <PrimeButton 
-            label = "Car Info"
-            class="carinfoR"
-            />
-            <PrimeButton 
-            label = "Driver Info"
-            class="driverinfoR"
-            />
+
+        <div class="Driver">
+        <img src="https://i.imgur.com/prOm0kPh.jpg" class="DriverImage">
+
+           <div class="DriverInfoC">
                
+            <div class="DriverText" >
+                text
+
+            </div>
+            <div class="doubleB">
+            <PrimeButton 
+            label = "Car Info"
+            @click="showPopup()"
+            class="DriverButton"
+            /> 
+            <CarPopup ref="carPopup"/>
+             <PrimeButton 
+            label = "Driver Info"
+            @click="showPopup()"
+            class="DriverButton"  
+            />
+            <CarPopup ref="carPopup"/>
+            </div>
+            </div>
+            </div>
+        <div class="Driver">
+        <img src="https://i.imgur.com/prOm0kPh.jpg" class="DriverImage">
+
+        <div class="DriverInfoC"> 
+
+            <div class="DriverText" >
+                text
+
+            </div>
+            <div class="doubleB">
+            <PrimeButton 
+            label = "Car Info"
+            @click="showPopup()"
+            class="DriverButton"  
+            />
+            <CarPopup ref="carPopup"/>
+             <PrimeButton 
+            label = "Driver Info"
+            @click="showPopup()"
+            class="DriverButton"  
+            />
+            <CarPopup ref="carPopup"/>
+            </div>
         </div>
-      </div>
+        </div>
+            
+    </div>  
 </template>
 
 <script src='./LandingPageConstructor.js'></script>

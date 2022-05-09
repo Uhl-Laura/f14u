@@ -16,7 +16,8 @@ import Card from 'primevue/card';
 import InputText from 'primevue/inputtext';
 import Password from 'primevue/password';
 import CascadeSelect from 'primevue/cascadeselect';
-import Textarea from 'primevue/textarea';
+import CarPopup from './components/CarPopup/CarPopup.vue'
+import Dialog from 'primevue/dialog'
 
 Vue.config.productionTip = false
 Vue.component("HeaderPage", HeaderPage);
@@ -28,7 +29,8 @@ Vue.component("PrimeCard", Card);
 Vue.component("InputText",InputText);
 Vue.component("PrimePassword",Password);
 Vue.component("CascadeSelect",CascadeSelect);
-Vue.component("TextareaBox",Textarea);
+Vue.component("CarPopup", CarPopup);
+Vue.component("PrimeDialog", Dialog);
 
 new Vue({
   router,
