@@ -7,16 +7,12 @@ using System.Threading.Tasks;
 
 namespace f14u_server.Models
 {
-    public class Credentials
+    public class Change
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
-        [BsonElement("username")]
-        public string Username { get; set; }
-        [BsonElement("password")]
-        public string Password { get; set; }
-        [BsonElement("role")]
-        public string Role { get; set; }
+        [BsonElement("change")]
+        public string change { get; set; }
     }
 }

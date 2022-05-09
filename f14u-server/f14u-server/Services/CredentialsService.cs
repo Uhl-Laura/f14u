@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using f14u_server.Models;
 using f14u_server.Repositories;
-using Google.Apis.Admin.Directory.directory_v1.Data;
 
 namespace f14u_server.Services
 {
