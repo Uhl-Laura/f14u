@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 ﻿using f14u_server.Models;
 using f14u_server.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using f14u_server.Models;
+using f14u_server.Repositories;
+>>>>>>> 6ccada85e52d299e6f57d2cba011e05f27264f96
 
 namespace f14u_server.Services
 {
@@ -14,10 +23,26 @@ namespace f14u_server.Services
         {
             Repository = repository;
         }
+<<<<<<< HEAD
         public List<Driver> GetDrivers(string constructorName)
         {
             var drivers = Repository.DriversRepository.GetAll().Where(item => item.TeamName == constructorName).ToList();
             return drivers;
+=======
+        public async Task CreateNewConstructor(string constructorName, string username, string firstDriverName, string secondDriverName)
+        {
+            Constructor constructor = new Constructor
+            {
+                Username = username,
+                Name = constructorName
+            };
+            await Repository.ConstructorsRepository.InsertOneAsync(constructor);
+            await AddNewDriver(firstDriverName, null, constructorName);
+            await AddNewDriver(secondDriverName, null, constructorName);
+            await AsignConstructorCarToDriver(constructorName, firstDriverName);
+            await AsignConstructorCarToDriver(constructorName, secondDriverName);
+
+>>>>>>> 6ccada85e52d299e6f57d2cba011e05f27264f96
         }
         public async Task AddNewDriver(string name, string username, string teamName)
         {
@@ -59,6 +84,7 @@ namespace f14u_server.Services
             };
             await Repository.CarComponentsRepository.InsertOneAsync(carComponent);
         }
+<<<<<<< HEAD
         public async Task ChangeComponentForCar(string driverName,CarComponent carComponent)
         {
             var componentToChange = Repository.CarComponentsRepository.GetAll().Where(item => item.Name == carComponent.Name).FirstOrDefault();
@@ -100,5 +126,7 @@ namespace f14u_server.Services
             return Repository.DriversRepository.GetAll().Select(item => item.DriverName).ToList();
         }
 
+=======
+>>>>>>> 6ccada85e52d299e6f57d2cba011e05f27264f96
     }
 }
