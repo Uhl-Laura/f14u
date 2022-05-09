@@ -34,10 +34,11 @@ Vue.component("InputText",InputText);
 Vue.component("PrimePassword",Password);
 Vue.component("PrimeDropdown",Dropdown);
 Vue.component("CascadeSelect",CascadeSelect);
-Vue.component("CarPopup", CarPopup);
 Vue.component("PrimeDialog", Dialog);
 Vue.component("StewardLandingPage",StewardLandingPage);
 Vue.use(VueGoodTablePlugin);
+Vue.component("CarPopup", CarPopup);
+Vue.component("PrimeDialog", Dialog);
 
 new Vue({
   router,
