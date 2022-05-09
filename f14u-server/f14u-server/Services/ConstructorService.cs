@@ -1,18 +1,10 @@
-<<<<<<< HEAD
 ﻿using f14u_server.Models;
 using f14u_server.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-=======
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using f14u_server.Models;
-using f14u_server.Repositories;
->>>>>>> 6ccada85e52d299e6f57d2cba011e05f27264f96
+
 
 namespace f14u_server.Services
 {
@@ -23,14 +15,10 @@ namespace f14u_server.Services
         {
             Repository = repository;
         }
-<<<<<<< HEAD
-        public List<Driver> GetDrivers(string constructorName)
-        {
-            var drivers = Repository.DriversRepository.GetAll().Where(item => item.TeamName == constructorName).ToList();
-            return drivers;
-=======
+        
         public async Task CreateNewConstructor(string constructorName, string username, string firstDriverName, string secondDriverName)
         {
+            var drivers = Repository.DriversRepository.GetAll().Where(item => item.TeamName == constructorName).ToList();
             Constructor constructor = new Constructor
             {
                 Username = username,
@@ -41,8 +29,6 @@ namespace f14u_server.Services
             await AddNewDriver(secondDriverName, null, constructorName);
             await AsignConstructorCarToDriver(constructorName, firstDriverName);
             await AsignConstructorCarToDriver(constructorName, secondDriverName);
-
->>>>>>> 6ccada85e52d299e6f57d2cba011e05f27264f96
         }
         public async Task AddNewDriver(string name, string username, string teamName)
         {
@@ -84,19 +70,18 @@ namespace f14u_server.Services
             };
             await Repository.CarComponentsRepository.InsertOneAsync(carComponent);
         }
-<<<<<<< HEAD
         public async Task ChangeComponentForCar(string driverName,CarComponent carComponent)
         {
             var componentToChange = Repository.CarComponentsRepository.GetAll().Where(item => item.Name == carComponent.Name).FirstOrDefault();
             if (componentToChange.AvailabilityCount < 1)
             {
                 Console.WriteLine("Component avability is over the limit of change");
-                await Repository.CarComponentsRepository.ReplaceOneAsync(carComponent);
+                await Repository.CarComponentsRepository.ReplaceOneAsync(item => item.Driver == driverName,carComponent);
                 carComponent.AvailabilityCount = carComponent.AvailabilityCount - 1;
             }
             else
             {
-                await Repository.CarComponentsRepository.ReplaceOneAsync(carComponent);
+                await Repository.CarComponentsRepository.ReplaceOneAsync(item => item.Driver == driverName,carComponent);
                 carComponent.AvailabilityCount = carComponent.AvailabilityCount - 1;
             }
         }
@@ -113,20 +98,17 @@ namespace f14u_server.Services
             }
             else
             {
-                await Repository.DriversRepository.ReplaceOneAsync(driverName, driver);
+                await Repository.DriversRepository.DeleteManyAsync(item => item.DriverName == driverName);
+                await Repository.DriversRepository.InsertOneAsync(driver);
             }
         }
-        public bool isDriverInConstructorsDriverList(string driverName)
+        public List<Driver> GetDrivers(string constructorName)
         {
-            return GetDrivers().Any(item => item == driverName);
+            return Repository.DriversRepository.GetAll().Where(item => item.TeamName == constructorName).ToList();
         }
-        public List<string> GetDrivers()
+        public Car GetInformationAboutACar(string driverName)
         {
-            List<string> drivers = new List<string>();
-            return Repository.DriversRepository.GetAll().Select(item => item.DriverName).ToList();
+            return Repository.CarsRepository.GetAll().Where(item => item.Driver == driverName).FirstOrDefault();
         }
-
-=======
->>>>>>> 6ccada85e52d299e6f57d2cba011e05f27264f96
     }
 }

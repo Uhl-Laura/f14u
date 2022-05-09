@@ -31,5 +31,48 @@ namespace f14u_server.Controllers
             return null;
 
         }
+        [HttpPost("Drivers/{driverName}")]
+        public async Task<ActionResult> ChangeDriver(string driverName,Driver driver)
+        {
+            try
+            {
+                await ConstructorService.ChangeDriver(driverName, driver);
+                return Ok("Driver changed succesfully");
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500);
+            }
+        }
+        [HttpPost("CarComponents/{driverName}")]
+        public async Task<ActionResult> ChangeCarComponent(string driverName,CarComponent carComponent)
+        {
+            try
+            {
+                await ConstructorService.ChangeComponentForCar(driverName,carComponent);
+                return Ok("ComponentChanged");
+
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500);
+            }
+
+        }
+        [HttpGet("CarComponents/{driverName}")]
+        public ActionResult<Car> CarInformation(string driverName)
+        {
+            try
+            {
+                return ConstructorService.GetInformationAboutACar(driverName);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500);
+            }
+        }
     }
 }

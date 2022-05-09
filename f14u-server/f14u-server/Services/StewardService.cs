@@ -14,11 +14,6 @@ namespace f14u_server.Services
         {
             Repository = repository;
         }
-        public void DriverPenalty(Penalty penalty)
-        {
-            
-            
-        }
         
     }
 }
