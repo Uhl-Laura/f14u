@@ -13,12 +13,14 @@ import StewardLandingPage from './components/StewardLandingPage/StewardLandingPa
 import HeaderPage from './components/HeaderPage/HeaderPage.vue'
 import VueGoodTablePlugin from 'vue-good-table';
 import router from './router'
+import Dialog from 'primevue/dialog'
 
 import Button from 'primevue/button';
 import Card from 'primevue/card';
 import InputText from 'primevue/inputtext';
 import Password from 'primevue/password';
 import CascadeSelect from 'primevue/cascadeselect';
+import StewardPopup from './components/StewardPopup/StewardPopup.vue'
 
 Vue.config.productionTip = false
 Vue.component("WelcomePage", WelcomePage);
@@ -31,6 +33,8 @@ Vue.component("PrimePassword",Password);
 Vue.component("CascadeSelect",CascadeSelect);
 Vue.component("StewardLandingPage",StewardLandingPage);
 Vue.component("HeaderPage",HeaderPage);
+Vue.component("StewardPopup", StewardPopup);
+Vue.component("PrimeDialog", Dialog);
 Vue.use(VueGoodTablePlugin);
 
 new Vue({

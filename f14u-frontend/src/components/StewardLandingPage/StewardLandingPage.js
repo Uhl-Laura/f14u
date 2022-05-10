@@ -33,9 +33,15 @@ export default {
               rows: []
         }
     },
-      async mounted()
-      {
-        this.rows= await getChanges()
-        console.log(this.rows);
+    async mounted()
+    {
+      this.rows= await getChanges()
+     console.log(this.rows);
+    },
+    methods: {
+      showPopup: function(){
+          this.$refs.stewardPopup.show();
       }
+    }
+    
 }

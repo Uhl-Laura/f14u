@@ -22,5 +22,7 @@ namespace f14u_server.Models
         public int count { get; set; }
         [BsonElement("driver")]
         public string driver { get; set; }
+        [BsonElement("penalty")]
+        public int penalty { get; set; }
     }
 }

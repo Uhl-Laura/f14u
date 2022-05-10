@@ -25,9 +25,8 @@
         theme="vgt-table striped">
         <template slot="table-row" slot-scope="props">
             <span v-if="props.column.field == 'finalDecision' && props.row.count < 0">
-                <button type="button" class="btn btn-primary">
-                    Give Penalty
-                </button>
+                <PrimeButton label="Give Penalty" @click="showPopup()"/>
+                <StewardPopup ref="stewardPopup"/>
             </span>
         <span v-else>
             {{props.formattedRow[props.column.field]}}
