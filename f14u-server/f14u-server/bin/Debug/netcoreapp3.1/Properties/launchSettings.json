@@ -26,7 +26,12 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "CONNECTION_STRING": "mongodb://localhost:27017/f14u",
         "DATABASE_NAME": "f14u",
-        "CREDENTIALS_TABLE_NAME": "Credentials"
+        "CREDENTIALS_TABLE_NAME": "Credentials",
+        "STEWARDS_TABLE_NAME": "Stewards",
+        "DRIVERS_TABLE_NAME": "Drivers",
+        "CONSTRUCTORS_TABLE_NAME": "Constructors",
+        "CARS_TABLE_NAME": "Cars",
+        "CAR_COMPONENTS_TABLE_NAME": "CarComponents"
       }
     }
   }

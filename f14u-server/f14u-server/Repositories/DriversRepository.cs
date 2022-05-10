@@ -7,4 +7,11 @@ using System.Threading.Tasks;
 
 namespace f14u_server.Repositories
 {
+    public class DriversRepository : RepositoryBase<Driver>, IDriversRepository
+    {
+        public DriversRepository(IMongoCollection<Driver> collection) : base(collection)
+        {
+
+        }
+    }
 }

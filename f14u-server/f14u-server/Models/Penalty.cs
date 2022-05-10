@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace f14u_server.Models
 {
-    public class Constructor
+    public class Penalty
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
-        [BsonElement("name")]
-        public string Name { get; set; }
-        [BsonElement("username")]
-        public string Username { get; set; }
+        [BsonElement("teamPenalty")]
+        public string TeamPenalty { get; set; }
+        [BsonElement("driverPenalty")]
+        public string DriverPenalty { get; set; }
     }
 }

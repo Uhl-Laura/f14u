@@ -12,7 +12,14 @@ namespace f14u_server.Models
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
-        [BsonElement("change")]
-        public string change { get; set; }
+        [BsonElement("carComponent")]
+        public string CarComponent{get;set;}
+        [BsonElement("drivername")]
+        public string DriverName { get; set; }
+        [BsonElement("team")]
+        public string TeamName { get; set; }
+        [BsonElement("legality")]
+        public bool isLegal { get; set; }
+        
     }
 }

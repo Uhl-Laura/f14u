@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace f14u_server.Repositories
 {
-    public class CarsRepository : RepositoryBase<Car>, ICarsRepository
+    public class ChangeRepository : RepositoryBase<Change>, IChangeRepository
     {
-        public CarsRepository(IMongoCollection<Car> collection) : base(collection)
+        public ChangeRepository(IMongoCollection<Change> collection) : base(collection)
         {
 
         }

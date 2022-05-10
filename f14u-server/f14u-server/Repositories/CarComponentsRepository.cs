@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace f14u_server.Repositories
 {
-    public class CarsRepository : RepositoryBase<Car>, ICarsRepository
+    public class CarComponentsRepository : RepositoryBase<CarComponent>, ICarComponentsRepository
     {
-        public CarsRepository(IMongoCollection<Car> collection) : base(collection)
+        public CarComponentsRepository(IMongoCollection<CarComponent> collection) : base(collection)
         {
 
         }
+
     }
 }

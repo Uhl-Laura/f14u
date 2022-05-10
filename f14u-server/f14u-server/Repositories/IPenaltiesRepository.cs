@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 
 namespace f14u_server.Repositories
 {
-    public interface IDriversRepository : IRepositoryBase<Models.Driver>
+    public interface IPenaltiesRepository : IRepositoryBase<Models.Penalty>
     {
-
     }
 }

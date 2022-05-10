@@ -19,8 +19,14 @@ import Button from 'primevue/button';
 import Card from 'primevue/card';
 import InputText from 'primevue/inputtext';
 import Password from 'primevue/password';
+<<<<<<< HEAD
 import CascadeSelect from 'primevue/cascadeselect';
 import StewardPopup from './components/StewardPopup/StewardPopup.vue'
+=======
+import Dropdown from 'primevue/dropdown';
+import CarPopup from './components/CarPopup/CarPopup.vue'
+import Dialog from 'primevue/dialog'
+>>>>>>> b88ce641c8ca2fb2f5a0a8080531ce9ac497f516
 
 Vue.config.productionTip = false
 Vue.component("WelcomePage", WelcomePage);
@@ -30,12 +36,18 @@ Vue.component("PrimeButton", Button);
 Vue.component("PrimeCard", Card);
 Vue.component("InputText",InputText);
 Vue.component("PrimePassword",Password);
+<<<<<<< HEAD
 Vue.component("CascadeSelect",CascadeSelect);
 Vue.component("StewardLandingPage",StewardLandingPage);
 Vue.component("HeaderPage",HeaderPage);
 Vue.component("StewardPopup", StewardPopup);
 Vue.component("PrimeDialog", Dialog);
 Vue.use(VueGoodTablePlugin);
+=======
+Vue.component("PrimeDropdown",Dropdown);
+Vue.component("CarPopup", CarPopup);
+Vue.component("PrimeDialog", Dialog);
+>>>>>>> b88ce641c8ca2fb2f5a0a8080531ce9ac497f516
 
 new Vue({
   router,

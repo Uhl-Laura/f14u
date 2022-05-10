@@ -1,70 +1,27 @@
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\appsettings.Development.json
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\appsettings.json
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.exe
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.deps.json
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.runtimeconfig.json
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.runtimeconfig.dev.json
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.dll
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.pdb
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csprojAssemblyReference.cache
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csproj.CoreCompileInputs.cache
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.MvcApplicationPartsAssemblyInfo.cache
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.AssemblyInfoInputs.cache
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.AssemblyInfo.cs
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.RazorTargetAssemblyInfo.cache
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\staticwebassets\f14u-server.StaticWebAssets.Manifest.cache
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\staticwebassets\f14u-server.StaticWebAssets.xml
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.dll
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.pdb
-A:\UT\An 3\SEM 2\II\Project\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.genruntimeconfig.cache
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\appsettings.Development.json
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\appsettings.json
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.exe
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.deps.json
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.runtimeconfig.json
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.runtimeconfig.dev.json
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.pdb
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csprojAssemblyReference.cache
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.AssemblyInfoInputs.cache
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.AssemblyInfo.cs
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.RazorTargetAssemblyInfo.cache
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\staticwebassets\f14u-server.StaticWebAssets.Manifest.cache
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\staticwebassets\f14u-server.StaticWebAssets.xml
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.pdb
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.genruntimeconfig.cache
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csproj.CopyComplete
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\DnsClient.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.Admin.Directory.directory_v1.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.Auth.PlatformServices.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.Auth.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Microsoft.Data.Edm.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Microsoft.Data.OData.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\SharpCompress.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\linux\native\libsnappy64.so
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\linux\native\libzstd.so
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\osx\native\libsnappy64.dylib
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\osx\native\libzstd.dylib
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\linux\native\libmongocrypt.so
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\osx\native\libmongocrypt.dylib
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Microsoft.Data.Edm.dll
-A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Microsoft.Data.OData.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\System.Spatial.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\de\Microsoft.Data.Edm.resources.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\es\Microsoft.Data.Edm.resources.dll
@@ -93,8 +50,45 @@ A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\ru\System.Spatial.resources.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\zh-Hans\System.Spatial.resources.dll
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\zh-Hant\System.Spatial.resources.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\linux\native\libsnappy64.so
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\linux\native\libzstd.so
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\osx\native\libsnappy64.dylib
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\osx\native\libzstd.dylib
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\native\libzstd.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy32.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\native\snappy64.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\linux\native\libmongocrypt.so
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\osx\native\libmongocrypt.dylib
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csprojAssemblyReference.cache
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csproj.CoreCompileInputs.cache
 A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.MvcApplicationPartsAssemblyInfo.cache
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.AssemblyInfoInputs.cache
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.AssemblyInfo.cs
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.RazorTargetAssemblyInfo.cache
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csproj.CopyComplete
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\staticwebassets\f14u-server.StaticWebAssets.Manifest.cache
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\staticwebassets\f14u-server.StaticWebAssets.xml
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.pdb
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.deps.json
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.runtimeconfig.json
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.runtimeconfig.dev.json
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.dll
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.pdb
+A:\UT\An 3\SEM 2\II\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.genruntimeconfig.cache
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csproj.AssemblyReference.cache
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.AssemblyInfoInputs.cache
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.AssemblyInfo.cs
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csproj.CoreCompileInputs.cache
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.dll
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.pdb
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.exe
@@ -104,6 +98,11 @@ C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Info
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\f14u-server.pdb
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.dll
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.Admin.Directory.directory_v1.dll
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.Auth.dll
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Microsoft.Data.Edm.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Microsoft.Data.OData.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
@@ -112,6 +111,7 @@ C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Info
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\SharpCompress.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
@@ -159,20 +159,13 @@ C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Info
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
-C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csproj.AssemblyReference.cache
-C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.AssemblyInfoInputs.cache
-C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.AssemblyInfo.cs
-C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csproj.CoreCompileInputs.cache
-C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\staticwebassets\f14u-server.StaticWebAssets.Manifest.cache
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\staticwebassets\f14u-server.StaticWebAssets.xml
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\scopedcss\bundle\f14u-server.styles.css
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.RazorTargetAssemblyInfo.cache
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.csproj.CopyComplete
-C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.dll
-C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.pdb
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.Admin.Directory.directory_v1.dll
 C:\Users\Alin\Desktop\Facultate Automatica\Anul III\Semestrul II\Industrial Informatics\Project\f14u\f14u-server\f14u-server\bin\Debug\netcoreapp3.1\Google.Apis.Auth.PlatformServices.dll
@@ -262,3 +255,5 @@ C:\Users\Lore\OneDrive\Desktop\plm\f14u\f14u-server\f14u-server\obj\Debug\netcor
 C:\Users\Lore\OneDrive\Desktop\plm\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.dll
 C:\Users\Lore\OneDrive\Desktop\plm\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.pdb
 C:\Users\Lore\OneDrive\Desktop\plm\f14u\f14u-server\f14u-server\obj\Debug\netcoreapp3.1\f14u-server.genruntimeconfig.cache
+=======
+>>>>>>> b88ce641c8ca2fb2f5a0a8080531ce9ac497f516
