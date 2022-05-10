@@ -15,6 +15,7 @@ namespace f14u_server.Repositories
         public IDriversRepository DriversRepository { get; set; }
         public IStewardsRepository StewardsRepository { get; set; }
         public ICarsRepository CarsRepository { get; set; }
+        public IChangeRepository ChangeRepository { get; set; }
         public ICarComponentsRepository CarComponentsRepository { get; set; }
         public RepositoryWrapper()
         {
@@ -28,6 +29,7 @@ namespace f14u_server.Repositories
             ConstructorsRepository = new ConstructorsRepository(database.GetCollection<Constructor>(EnvironmentVariables.constructorTableName));
             CarsRepository = new CarsRepository(database.GetCollection<Car>(EnvironmentVariables.carsTableName));
             CarComponentsRepository = new CarComponentsRepository(database.GetCollection<CarComponent>(EnvironmentVariables.carComponentsTableName));
+            ChangeRepository = new ChangeRepository(database.GetCollection<Change>(EnvironmentVariables.ChangeTableName));
         }
     }
 }

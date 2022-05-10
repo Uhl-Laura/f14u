@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace f14u_server.Models
 {
-    public class Driver
+    public class Change
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
-        [BsonElement("driver")]
+        [BsonElement("carComponent")]
+        public string CarComponent{get;set;}
+        [BsonElement("drivername")]
         public string DriverName { get; set; }
         [BsonElement("team")]
-        public string TeamName { get;set; }
-        [BsonElement("username")]
-        public string Username { get; set; }
-        [BsonElement("penalty")]
-        public int Penalty { get; set; }
-
+        public string TeamName { get; set; }
+        [BsonElement("legality")]
+        public bool isLegal { get; set; }
+        
     }
 }

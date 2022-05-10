@@ -14,6 +14,9 @@ namespace f14u_server.Services
         {
             Repository = repository;
         }
-        
+        public List<Change> GetAllChanges()
+        {
+            return Repository.ChangeRepository.GetAll().ToList();
+        }
     }
 }

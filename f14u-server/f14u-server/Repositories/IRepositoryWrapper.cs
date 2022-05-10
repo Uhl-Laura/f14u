@@ -14,6 +14,7 @@ namespace f14u_server.Repositories
         public ICarsRepository CarsRepository { get; }
         public ICarComponentsRepository CarComponentsRepository { get; }
         public IPenaltiesRepository PenaltiesRepository { get; }
+        public IChangeRepository ChangeRepository { get; }
 
     }
 }
