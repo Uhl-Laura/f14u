@@ -16,7 +16,7 @@ namespace f14u_server.Services
             Repository = repository;
         }
         
-        public async Task CreateNewConstructor(string constructorName, string username, string firstDriverName, string secondDriverName)
+        public async Task CreateNewConstructor(string constructorName, string username, string firstDriverName, string secondDriverName,string imageUrlCarForDriver)
         {
             var drivers = Repository.DriversRepository.GetAll().Where(item => item.TeamName == constructorName).ToList();
             Constructor constructor = new Constructor
@@ -25,27 +25,29 @@ namespace f14u_server.Services
                 Name = constructorName
             };
             await Repository.ConstructorsRepository.InsertOneAsync(constructor);
-            await AddNewDriver(firstDriverName, null, constructorName);
-            await AddNewDriver(secondDriverName, null, constructorName);
-            await AsignConstructorCarToDriver(constructorName, firstDriverName);
-            await AsignConstructorCarToDriver(constructorName, secondDriverName);
+            await AddNewDriver(firstDriverName, null, constructorName, null);
+            await AddNewDriver(secondDriverName, null, constructorName, null);
+            await AsignConstructorCarToDriver(constructorName, firstDriverName,imageUrlCarForDriver);
+            await AsignConstructorCarToDriver(constructorName, secondDriverName,imageUrlCarForDriver);
         }
-        public async Task AddNewDriver(string name, string username, string teamName)
+        public async Task AddNewDriver(string name, string username, string teamName,string imageUrl)
         {
             Driver driver = new Driver
             {
                 DriverName = name,
                 Username = username,
-                TeamName = teamName
+                TeamName = teamName,
+                ImageURL = imageUrl
             };
             await Repository.DriversRepository.InsertOneAsync(driver);
         }
-        public async Task AsignConstructorCarToDriver(string teamName, string driverName)
+        public async Task AsignConstructorCarToDriver(string teamName, string driverName, string imageURL)
         {
             Car car = new Car
             {
                 Driver = driverName,
-                Team = teamName
+                Team = teamName,
+                ImageUrl = imageURL
             };
             await Repository.CarsRepository.InsertOneAsync(car);
             await GenerateComponentsForCar(teamName, driverName);
@@ -112,6 +114,8 @@ namespace f14u_server.Services
         {
             return Repository.CarsRepository.GetAll().Where(item => item.Driver == driverName).FirstOrDefault();
         }
+
+
     
     }
 }

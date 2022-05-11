@@ -23,7 +23,9 @@ export default {
             selectedDriverName: null, 
             availableDriverNames: [],
             displayDriverMessage: false,
-            driverMessage: null
+            driverMessage: null,
+            driverImageUrl: null,
+            carImageUrl: null
         }
     },
     async mounted(){
@@ -46,7 +48,8 @@ export default {
                 username: this.username,
                 name: this.selectedDriverName.driverName,
                 password: this.password,
-                teamName: this.selectedDriverName.teamName
+                teamName: this.selectedDriverName.teamName,
+                driverImageUrl: this.driverImageUrl
             }
             var response = await postData(Constants.CREDENTIALS_URL + "/register/driver", JSON.stringify(driverInformation));
             console.log(response);
@@ -65,7 +68,8 @@ export default {
                 username: this.username, 
                 password: this.password, 
                 firstDriverName: this.firstDriverName,
-                secondDriverName: this.secondDriverName
+                secondDriverName: this.secondDriverName,
+                carImageUrl: this.carImageUrl
             };
             var response = await postData(Constants.CREDENTIALS_URL + "/register/constructor", JSON.stringify(constructorInformation));
             console.log(response);
@@ -77,5 +81,6 @@ export default {
             this.driverMessage = "Your team is: " + this.selectedDriverName.teamName;
             this.displayDriverMessage = true;
         }
+        
     }
 }

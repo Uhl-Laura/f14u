@@ -18,6 +18,8 @@ namespace f14u_server.Models
         public string TeamName { get;set; }
         [BsonElement("username")]
         public string Username { get; set; }
+        [BsonElement("imageurl")]
+        public string ImageURL { get; set; }
 
     }
 }

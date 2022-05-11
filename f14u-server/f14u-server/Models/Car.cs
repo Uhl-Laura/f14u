@@ -16,5 +16,7 @@ namespace f14u_server.Models
         public string Driver { get; set; }
         [BsonElement("team")]
         public string Team { get; set; }
+        [BsonElement("imageurl")]
+        public string ImageUrl { get; set; }
     }
 }

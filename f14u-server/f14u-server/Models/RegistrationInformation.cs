@@ -13,5 +13,7 @@ namespace f14u_server.Models
         public string TeamName { get; set; }
         public string FirstDriverName { get; set; } 
         public string SecondDriverName { get; set; }
+        public string DriverImageUrl { get; set; }
+        public string CarImageUrl { get; set; }
     }
 }

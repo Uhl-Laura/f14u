@@ -84,7 +84,7 @@ namespace f14u_server.Services
                 Role = "constructor"
             };
             await Repository.CredentialsRepository.InsertOneAsync(credentials);
-            await ConstructorService.CreateNewConstructor(registrationInformation.TeamName, registrationInformation.Username, registrationInformation.FirstDriverName, registrationInformation.SecondDriverName);
+            await ConstructorService.CreateNewConstructor(registrationInformation.TeamName, registrationInformation.Username, registrationInformation.FirstDriverName, registrationInformation.SecondDriverName,registrationInformation.CarImageUrl);
         }
         public async Task RegisterDriver(RegistrationInformation registrationInformation)
         {
@@ -95,7 +95,7 @@ namespace f14u_server.Services
                 Role = "driver"
             };
             await Repository.CredentialsRepository.InsertOneAsync(credentials);
-            await ConstructorService.AddNewDriver(registrationInformation.Name, registrationInformation.Username, registrationInformation.TeamName);
+            await ConstructorService.AddNewDriver(registrationInformation.Name, registrationInformation.Username, registrationInformation.TeamName,registrationInformation.DriverImageUrl);
         }
     }
 }
