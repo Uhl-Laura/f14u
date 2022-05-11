@@ -18,5 +18,14 @@ namespace f14u_server.Services
         {
             return Repository.ChangeRepository.GetAll().ToList();
         }
+        public async Task GivePenalty(Penalty penalty)
+        {
+            await Repository.PenaltiesRepository.InsertOneAsync(penalty);
+        }
+        public List<Penalty> ShowAllPenaltiesForADriver(string driverName)
+        {
+            return Repository.PenaltiesRepository.GetAll().Where(item => item.DriverName == driverName).ToList();
+        } 
+
     }
 }
