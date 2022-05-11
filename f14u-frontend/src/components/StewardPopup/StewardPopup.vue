@@ -2,7 +2,7 @@
     <div>
         <PrimeDialog position="top" :visible="addPopup">
             <div>
-                Penalty successfully sent!
+                Penalty has been sent!
             </div>
             <template #footer>
                 <PrimeButton label="OK" @click="cancel()"/>
@@ -11,7 +11,4 @@
     </div>
 </template>
 <script src="./StewardPopup.js" type="module">
-    export default {
-        name: 'StewardPopup'
-    }
 </script>

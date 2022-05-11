@@ -7,18 +7,18 @@ export default {
         return{
             columns: [
                 {
-                  label: "Constructor",
-                  field: "constructor",
+                  label: "Car Component",
+                  field: "carComponent",
                   filterable: true
                 },
                 {
                   label: "Driver",
-                  field: "driver",
+                  field: "driverName",
                   filterable: true
                 },
                 {
-                    label: "Change",
-                    field: "change",
+                    label: "Team",
+                    field: "teamName",
                     filterable: true
                 },
                 {
@@ -27,8 +27,9 @@ export default {
                     filterable: true
                 }
               ],
-              rows: []
+              rows: [],
         }
+
     },
     async mounted()
     {
@@ -36,17 +37,17 @@ export default {
      console.log(this.rows);
     },
     methods: {
+      async saveData(driverName,teamName){
+        var newPenaltyInfo = {
+          stewardname: "someStewardName", 
+          drivername: driverName,
+          teamname: teamName,
+      };
+      var response = await postData(Constants.STEWARD_POST_URL, JSON.stringify(newPenaltyInfo));
+      console.log(response);
+      },
       showPopup: function(){
           this.$refs.stewardPopup.show();
-      },
-      async saveData(constructor,driver,change){
-        var newPenaltyInfo = {
-          constructor: constructor, 
-          driver: driver,
-          change: change,
-      };
-      var response = await postData(Constants.STEWARD_URL, JSON.stringify(newPenaltyInfo));
-      console.log(response);
       }
-    }
+  }
 }

@@ -1,11 +1,13 @@
 <script>
-    import HeaderPage from './HeaderPage/HeaderPage.vue'
+    import HeaderPage from '../HeaderPage/HeaderPage.vue'
     import 'vue-good-table/dist/vue-good-table.css'
-    import { VueGoodTable } from 'vue-good-table';
+    import { VueGoodTable } from 'vue-good-table'
+    import StewardPopup from '../StewardPopup/StewardPopup.vue'
     export default {
       components: {
         VueGoodTable,
-        HeaderPage
+        HeaderPage,
+        StewardPopup
       }
     }
 </script>
@@ -24,8 +26,8 @@
         max-height="200px"
         theme="vgt-table striped">
         <template slot="table-row" slot-scope="props">
-            <span v-if="props.column.field == 'finalDecision' && props.row.count < 0">
-                <PrimeButton label="Give Penalty" @click="showPopup(), saveData(props.row.constructor,props.row.driver,props.row.change)"/>
+            <span v-if="props.column.field == 'finalDecision' && props.row.isLegal == false">
+                <PrimeButton label="Give Penalty" @click="showPopup(), saveData()"/>
                 <StewardPopup ref="stewardPopup"/>
             </span>
         <span v-else>

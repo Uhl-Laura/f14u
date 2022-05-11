@@ -1,7 +1,7 @@
 import { Constants } from "@/constants";
 export async function getChanges()
 {
-    const response = await fetch(Constants.CREDENTIALS_URL);
+    const response = await fetch(Constants.STEWARD_GET_URL);
     const jsonResponse = await response.json();
     return jsonResponse
 }
