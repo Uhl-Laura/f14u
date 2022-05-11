@@ -5,6 +5,7 @@
       <PrimeButton 
       label = "Log Out"
       class="logout"
+      @click="redirectToWelcomePage"
       />
       </div> 
       

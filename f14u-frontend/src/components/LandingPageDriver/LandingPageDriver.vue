@@ -1,4 +1,3 @@
-
 <template>
     <div class="Page">
         <HeaderPage></HeaderPage>

@@ -78,3 +78,4 @@
 
 <script src='./RegisterPage.js'></script>
 <style src='./RegisterPage.css'></style>
+

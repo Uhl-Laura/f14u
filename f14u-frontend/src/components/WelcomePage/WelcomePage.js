@@ -9,9 +9,6 @@ export default {
     methods: {
         redirectToLogin: function() {
             this.$router.push("Login");
-        },
-        showPopup: function(){
-            this.$refs.carPopup.show();
         }
     }
 }
