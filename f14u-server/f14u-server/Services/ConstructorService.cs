@@ -72,18 +72,20 @@ namespace f14u_server.Services
         }
         public async Task ChangeComponentForCar(string driverName,CarComponent carComponent)
         {
-            var componentToChange = Repository.CarComponentsRepository.GetAll().Where(item => item.Name == carComponent.Name).FirstOrDefault();
-            if (componentToChange.AvailabilityCount < 1)
+            var componentToChange = Repository.CarComponentsRepository.GetAll().Where(item => item.Name == carComponent.Name &&
+                                                                                              item.Driver == carComponent.Driver)
+                                                                       .FirstOrDefault();
+            Change change = new Change
             {
-                Console.WriteLine("Component avability is over the limit of change");
-                await Repository.CarComponentsRepository.ReplaceOneAsync(item => item.Driver == driverName,carComponent);
-                carComponent.AvailabilityCount = carComponent.AvailabilityCount - 1;
-            }
-            else
-            {
-                await Repository.CarComponentsRepository.ReplaceOneAsync(item => item.Driver == driverName,carComponent);
-                carComponent.AvailabilityCount = carComponent.AvailabilityCount - 1;
-            }
+                CarComponent = carComponent.Name,
+                DriverName = driverName,
+                TeamName = carComponent.Team,
+            };
+            componentToChange.AvailabilityCount--;
+            await Repository.CarComponentsRepository.ReplaceOneAsync(item => item.Name == carComponent.Name &&
+                                                                             item.Driver == carComponent.Driver, componentToChange);
+            change.isLegal = componentToChange.AvailabilityCount >= 0;
+            await Repository.ChangeRepository.InsertOneAsync(change);
         }
         public List<Driver> GetDriversByConstructor(string constructorName) 
         {

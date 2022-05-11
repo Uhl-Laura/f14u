@@ -18,8 +18,6 @@ namespace f14u_server.Models
         public string TeamName { get;set; }
         [BsonElement("username")]
         public string Username { get; set; }
-        [BsonElement("penalty")]
-        public int Penalty { get; set; }
 
     }
 }

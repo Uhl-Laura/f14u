@@ -17,7 +17,7 @@ namespace f14u_server.Controllers
         {
             StewardService = stewardService;
         }
-        [HttpGet("Steward")]
+        [HttpGet]
         public ActionResult<List<Change>> GetAllChanges()
         {
             try
