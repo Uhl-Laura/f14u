@@ -1,9 +1,9 @@
 <template>
     <div class="Page">
         <HeaderPage></HeaderPage>
-
+        <img src="https://imgur.com/ici40ri.jpg">
         <div class="Driver">
-        <img src="https://i.imgur.com/prOm0kPh.jpg" class="DriverImage">
+        <img src="https://imgur.com/Qr1IW9M.jpg" class="DriverImage">
 
            <div class="DriverInfo">
                
@@ -19,16 +19,15 @@
              <CarPopup ref="carPopup"/>
             </div>
             </div>
+            <img src="https://imgur.com/ici40ri.jpg">
         <div class="Driver">
-        <img src="https://i.imgur.com/prOm0kPh.jpg" class="DriverImage">
+        <img src="https://imgur.com/Qr1IW9M.jpg" class="DriverImage">
 
         <div class="DriverInfo"> 
 
             <div class="DriverText" >
                 text
-
             </div>
-
             <PrimeButton 
             label = "Car Info"
             @click="showPopup()"

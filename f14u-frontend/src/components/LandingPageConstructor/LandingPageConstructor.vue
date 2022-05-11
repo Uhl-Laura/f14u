@@ -1,10 +1,10 @@
-
 <template>
     <div class="Page">
-        <HeaderPage></HeaderPage>
-
+        <HeaderPage></HeaderPage> 
+        <img src="https://imgur.com/ici40ri.jpg">
         <div class="Driver">
-        <img src="https://i.imgur.com/prOm0kPh.jpg" class="DriverImage">
+        
+        <img src="https://imgur.com/Qr1IW9M.jpg" class="DriverImage">
 
            <div class="DriverInfoC">
                
@@ -28,8 +28,9 @@
             </div>
             </div>
             </div>
+             <img src="https://imgur.com/ici40ri.jpg">
         <div class="Driver">
-        <img src="https://i.imgur.com/prOm0kPh.jpg" class="DriverImage">
+        <img src="https://imgur.com/Qr1IW9M.jpg" class="DriverImage">
 
         <div class="DriverInfoC"> 
 

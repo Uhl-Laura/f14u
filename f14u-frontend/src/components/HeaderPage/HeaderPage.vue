@@ -7,8 +7,7 @@
       class="logout"
       @click="redirectToWelcomePage"
       />
-      </div> 
-      
+      </div>    
   </div>
 </template>
 

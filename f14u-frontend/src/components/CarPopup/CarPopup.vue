@@ -1,25 +1,21 @@
 <template>
     <div>
         <PrimeDialog position="top" :visible="addPopup"  >
-            
             <template #header>
                 <h4>Car Popup </h4>
             </template>
               <div>
                 <CascadeSelect
-                  v-model="selectedRole" :options="role" optionLabel="teamname" optionGroupLabel="name" :optionGroupChildren="['team']"
+                  v-model="selectedComponent" :options="component" optionLabel="component" optionGroupLabel="team" :optionGroupChildren="['team']"
                   style="width: 17rem; margin-bottom: 20em; height: 2rem"
-                  placeholder="Select a Team">
+                  placeholder="Select a component">
                   <template #option="slotProps">
-                    <div class="country-item">
+                    <div class="component-item">
                       <i
-                        v-if="slotProps.option.name"
-                      ></i>
-                      <i
-                        v-if="slotProps.option.teamname"
+                        v-if="slotProps.option.component"
                       ></i>
                       <span>{{
-                        slotProps.option.name || slotProps.option.teamname
+                       slotProps.option.component
                       }}</span>
                     </div>
                   </template>
