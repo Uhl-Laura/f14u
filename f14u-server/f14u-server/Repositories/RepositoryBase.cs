@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using MongoDB.Driver;
 
@@ -41,6 +42,14 @@ namespace f14u_server.Repositories
         }
 
         public async Task DeleteManyAsync(string filter)
+        {
+            await Collection.DeleteManyAsync(filter);
+        }
+        public async Task ReplaceOneAsync(Expression<Func<T, bool>> filter, T replaceableEntity)
+        {
+            await Collection.ReplaceOneAsync(filter, replaceableEntity);
+        }
+        public async Task DeleteManyAsync(Expression<Func<T, bool>> filter)
         {
             await Collection.DeleteManyAsync(filter);
         }

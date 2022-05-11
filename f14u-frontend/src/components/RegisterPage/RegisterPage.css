@@ -1,0 +1,26 @@
+.form-card {
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    /* overflow: scroll; */
+    overflow: auto;
+}
+.input-box-label {
+    color: white;
+}
+.title {
+    color: white; 
+    font-size: 1.5vw
+}
+.p-error {
+    color: #ff9b9b;
+}
+.p-inputtext-unav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    color: #333333;
+    background: #ffb7b7;
+    padding: 0.429rem 0.429rem;
+    border: 1px solid #a6a6a6;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}

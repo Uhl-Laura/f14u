@@ -1,5 +1,6 @@
 <template>
     <div>
+<<<<<<< HEAD
         <PrimeDialog position="top" :visible="addPopup"  >
             
             <template #header>
@@ -37,3 +38,23 @@
         
     }
 </script > 
+=======
+        <PrimeDialog position="top" :visible="addPopup">
+            <template #header>
+                <h4>Car Popup</h4>
+            </template>
+            <div>
+                Thing
+            </div>
+            <template #footer>
+                <PrimeButton @click="cancel()"/>
+            </template>
+        </PrimeDialog>
+    </div>
+</template>
+<script src="./CarPopup.js" type="module">
+    export default {
+        name: 'CarPopup'
+    }
+</script>
+>>>>>>> 81b79e24da271b1d3da54b0a0d2ca1e8978a43ef

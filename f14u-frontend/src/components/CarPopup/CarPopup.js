@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export default {
     data(){
         return{
@@ -50,6 +51,18 @@ export default {
     mount(){
 
     },
+=======
+export default{
+    name: 'CarPopup',
+    props: {
+
+    },
+    data(){
+        return {
+            addPopup: false
+        }
+    },
+>>>>>>> 81b79e24da271b1d3da54b0a0d2ca1e8978a43ef
     methods: {
         cancel(){
             this.addPopup = false;
