@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace f14u_server.Controllers
 {
     [ApiController]
-    [Route("[strward]")]
+    [Route("[controller]")]
     public class StewardController : ControllerBase
     {
         private StewardService StewardService { get; set; }

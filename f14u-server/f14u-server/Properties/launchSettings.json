@@ -31,7 +31,7 @@
         "STEWARDS_TABLE_NAME": "Stewards",
         "DRIVERS_TABLE_NAME": "Drivers",
         "CARS_TABLE_NAME": "Cars",
-        "CAR_COMPONENTS_TABLE_NAME": "CarComponents"
+        "CAR_COMPONENTS_TABLE_NAME": "CarComponents",
         "CAR_CHANGE_TABLE_NAME": "Changes"
       }
     }

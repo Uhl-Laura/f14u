@@ -32,7 +32,7 @@ namespace f14u_server.Controllers
 
         }
         [HttpPost("Drivers/{driverName}")]
-        public async Task<ActionResult> ChangeDriver(string driverName,Driver driver)
+        public async Task<ActionResult> ChangeDriver(Driver driver, string driverName)
         {
             try
             {
