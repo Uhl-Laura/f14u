@@ -99,5 +99,18 @@ namespace f14u_server.Controllers
                 return StatusCode(500);
             }
         }
+        [HttpGet("user/role/{username}")]
+        public ActionResult<string> GetRoleByUsername(string username)
+        {
+            try
+            {
+                return CredentialsService.FindRoleByUsername(username);
+
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500);
+            }
+        }
     }
 }
