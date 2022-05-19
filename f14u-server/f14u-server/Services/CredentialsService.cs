@@ -97,5 +97,10 @@ namespace f14u_server.Services
             await Repository.CredentialsRepository.InsertOneAsync(credentials);
             await ConstructorService.AddNewDriver(registrationInformation.Name, registrationInformation.Username, registrationInformation.TeamName,registrationInformation.DriverImageUrl);
         }
+        public string FindRoleByUsername(string username)
+        {
+            var human = Repository.CredentialsRepository.GetAll().Where(item => item.Username == username).FirstOrDefault();
+            return human.Role;
+        }
     }
 }
