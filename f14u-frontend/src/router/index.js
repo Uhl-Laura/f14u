@@ -7,6 +7,7 @@ import RegisterPage from  '../components/RegisterPage/RegisterPage.vue'
 import HeaderPage from  '../components/HeaderPage/HeaderPage.vue'
 import LandingPageDriver from  '../components/LandingPageDriver/LandingPageDriver.vue'
 import LandingPageConstructor from  '../components/LandingPageConstructor/LandingPageConstructor.vue'
+import LandingPageSteward from  '../components/LandingPageSteward/LandingPageSteward.vue'
 
 
 Vue.use(VueRouter)
@@ -41,6 +42,11 @@ Vue.use(VueRouter)
     path: '/LandingPageConstructor',
     name: 'LandingPageConstructor',
     component: LandingPageConstructor
+  },
+  {
+    path: '/LandingPageSteward',
+    name: 'LandingPageSteward',
+    component: LandingPageSteward
   }
  
 ]

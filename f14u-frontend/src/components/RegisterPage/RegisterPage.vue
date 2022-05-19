@@ -1,6 +1,5 @@
 <template>
   <div style="color: white">
-    Register Page
     <div>
       <div class="login-background">
         <div>
@@ -36,7 +35,7 @@
               <InputText v-model="driverImageUrl" v-if="driverRoleSelected"/>
               <h5 v-if="displayDriverMessage && driverRoleSelected"> {{driverMessage}} </h5>
               <h5>
-              <PrimeButton label="Submit" class="p-button-raised p-button-secondary p-button-text:color white" @click="register"/>
+              <PrimeButton label="Submit" class="p-button-raised p-button-secondary p-button-text:color white" @click="register" />
               </h5>
             </template>
           </PrimeCard>

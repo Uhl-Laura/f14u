@@ -1,6 +1,5 @@
 <template>
   <div style="color:white"> 
-<<<<<<< HEAD
 
     <PrimeCard
         style="z-index: -1; width: 20rem; margin-bottom: 3em; height: 26rem"
@@ -48,14 +47,6 @@
           </div>
         </template>
       </PrimeCard>
-=======
-    Welcome Page 
-    <div>
-      <PrimeButton label = "Go to login" @click="redirectToLogin"/>
-      <PrimeButton label = "AddPopup" @click="showPopup()"/>
-      <CarPopup ref="carPopup"/>
-    </div>
->>>>>>> 81b79e24da271b1d3da54b0a0d2ca1e8978a43ef
   </div>
 </template>
 

@@ -42,6 +42,11 @@ export default {
             if(this.driverRoleSelected) this.registerDriver();
             else if(this.stewardRoleSelected) this.registerSteward();
             else if(this.constructorRoleSelected) this.registerConstructor();
+            if(this.username && this.password && this.selectedRole){
+            this.$router.push("Login");
+            }
+            else console.log("Field can't be empty")
+            
         },
         async registerDriver(){
             var driverInformation = {
@@ -51,7 +56,7 @@ export default {
                 teamName: this.selectedDriverName.teamName,
                 driverImageUrl: this.driverImageUrl
             }
-            var response = await postData(Constants.CREDENTIALS_URL + "/register/driver", JSON.stringify(driverInformation));
+            var response = await postData(Constants.CREDENTIALS_URL + "/register/driver", driverInformation);
             console.log(response);
         },
         async registerSteward(){
@@ -60,18 +65,19 @@ export default {
                 name: this.stewardName,
                 password: this.password
             }
-            var response = await postData(Constants.CREDENTIALS_URL + "/register/steward", JSON.stringify(stewardInformation));
+            var response = await postData(Constants.CREDENTIALS_URL + "/register/steward", stewardInformation);
             console.log(response);
         },
         async registerConstructor(){
             var constructorInformation = {
                 username: this.username, 
                 password: this.password, 
+                teamName: this.teamName,
                 firstDriverName: this.firstDriverName,
                 secondDriverName: this.secondDriverName,
                 carImageUrl: this.carImageUrl
             };
-            var response = await postData(Constants.CREDENTIALS_URL + "/register/constructor", JSON.stringify(constructorInformation));
+            var response = await postData(Constants.CREDENTIALS_URL + "/register/constructor", constructorInformation);
             console.log(response);
         },
         async checkUsernameAvailability() {
@@ -80,7 +86,7 @@ export default {
         updateDriverMessage() {
             this.driverMessage = "Your team is: " + this.selectedDriverName.teamName;
             this.displayDriverMessage = true;
-        }
-        
+     
+        },
     }
 }

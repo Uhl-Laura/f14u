@@ -28,7 +28,11 @@
             />
           </div>
           <br />
-          <PrimeButton label="Login" class="p-button-raised p-button-secondary p-button-text:color white" />
+          <PrimeButton 
+          label="Login" 
+          class="p-button-raised p-button-secondary p-button-text:color white" 
+          @click="redirectToLandingPage"
+          />
           <br>
           <PrimeButton
             style="color: black; font-size: 0.71vw"
