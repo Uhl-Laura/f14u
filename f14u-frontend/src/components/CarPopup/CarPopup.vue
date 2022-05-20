@@ -1,20 +1,36 @@
 <template>
     <div>
-        <PrimeDialog position="top" :visible="addPopup">
+        <PrimeDialog position="top" :visible="addPopup"  >
+            
             <template #header>
-                <h4>Car Popup</h4>
+                <h4>Car Popup </h4>
             </template>
-            <div>
-                Thing
+              <div>
+                <CascadeSelect @click="availableComponents"
+                  v-model="selectedComponent" :options="component" optionLabel="component" optionGroupLabel="team" :optionGroupChildren="['team']"
+                  style="width: 17rem; margin-bottom: 20em; height: 2rem"
+                  placeholder="Select a component" >
+                  <template #option="slotProps">
+                    <div class="country-item">
+                      <i
+                        v-if="slotProps.option.component"
+                      ></i>
+                      <span>{{
+                        slotProps.option.component
+                      }}</span>
+                    </div>
+                  </template>
+                </CascadeSelect>
             </div>
             <template #footer>
-                <PrimeButton @click="cancel()"/>
+                <PrimeButton label="Submit" @click="cancel()"/>
             </template>
-        </PrimeDialog>
-    </div>
+        </PrimeDialog >
+    </div >
 </template>
-<script src="./CarPopup.js" type="module">
+<script src="./CarPopup.js" style="z-index: -1; width: 20rem; margin-bottom: 3em; height: 26rem" >
     export default {
         name: 'CarPopup'
+        
     }
-</script>
+</script > 

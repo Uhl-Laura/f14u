@@ -8,8 +8,8 @@ export async function postData(endpoint, data){
     var promise = fetch(endpoint, {
         method: "POST",
         body: JSON.stringify(data),
-        headers:{
-            'Access-Control-Allow-Origin':'*'
+        headers: {
+            "Content-Type": "application/json"
         }
     })
     return promise;
