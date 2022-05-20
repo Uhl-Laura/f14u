@@ -13,25 +13,17 @@
             <label for="username1" style="color: white"
               >Username <br /><br
             /></label>
-            <InputText
-              id="username1"
-              type="username"
-              aria-describedby="username1-help"
-            /><br /><br />
-            <label for="username1" style="color: white"
+            <InputText  v-model="username1" id="username1"/><br /><br />
+            <label for="password1" style="color: white"
               >Password <br /><br
             /></label>
-            <InputText
-              id="username1"
-              type="username"
-              aria-describedby="username1-help"
-            />
+           <InputText  v-model="password1" id="password1"/><br /><br />
           </div>
           <br />
           <PrimeButton 
           label="Login" 
           class="p-button-raised p-button-secondary p-button-text:color white" 
-          @click="redirectToLandingPage"
+          @click="registerVerification"
           />
           <br>
           <PrimeButton

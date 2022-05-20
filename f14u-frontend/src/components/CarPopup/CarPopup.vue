@@ -6,10 +6,10 @@
                 <h4>Car Popup </h4>
             </template>
               <div>
-                <CascadeSelect
+                <CascadeSelect @click="availableComponents"
                   v-model="selectedComponent" :options="component" optionLabel="component" optionGroupLabel="team" :optionGroupChildren="['team']"
                   style="width: 17rem; margin-bottom: 20em; height: 2rem"
-                  placeholder="Select a component">
+                  placeholder="Select a component" >
                   <template #option="slotProps">
                     <div class="country-item">
                       <i
