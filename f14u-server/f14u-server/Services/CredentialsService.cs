@@ -33,7 +33,7 @@ namespace f14u_server.Services
         public string VerifyLoginCredentials(Credentials credentials)
         {
             var storedCredentials = Repository.CredentialsRepository.GetAll().Where(item => item.Username == credentials.Username).FirstOrDefault();
-            if (credentials == null)
+            if (credentials == null || storedCredentials == null) 
                 return null;
             if (storedCredentials.Password == credentials.Password)
                 return storedCredentials.Role;

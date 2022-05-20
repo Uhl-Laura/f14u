@@ -1,6 +1,6 @@
-import { getChanges } from "../../helpers/DataGetter"
+import { getChanges } from "../../helpers/DataGetters"
 import { Constants } from "@/constants";
-import { postData } from "@/helpers/DataGetter"; 
+import { postData } from "@/helpers/DataGetters"; 
 
 export default {
     data(){

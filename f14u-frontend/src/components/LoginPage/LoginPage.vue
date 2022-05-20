@@ -13,11 +13,11 @@
             <label for="username1" style="color: white"
               >Username <br /><br
             /></label>
-            <InputText  v-model="username1" id="username1"/><br /><br />
+            <InputText  v-model="username" id="username1"/><br /><br />
             <label for="password1" style="color: white"
               >Password <br /><br
             /></label>
-           <InputText  v-model="password1" id="password1"/><br /><br />
+           <InputText  v-model="password" id="password1"/><br /><br />
           </div>
           <br />
           <PrimeButton 
