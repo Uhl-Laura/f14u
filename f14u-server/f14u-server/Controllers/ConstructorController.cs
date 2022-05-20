@@ -88,5 +88,29 @@ namespace f14u_server.Controllers
                 return StatusCode(500);
             }
         }
+        [HttpGet("name/{username}")]
+        public ActionResult<String> GetNameByConstructorUsername(string username)
+        {
+            try
+            {
+                return ConstructorService.GetNameByUsername(username);
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500);
+            }
+        }
+        [HttpGet("driver/name/{username}")]
+        public ActionResult<String> GetDriverNameByUsername(string username)
+        {
+            try
+            {
+                return ConstructorService.GetDriverNameByUsername(username);
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+                return StatusCode(500);
+            }
+        }
     }
 }

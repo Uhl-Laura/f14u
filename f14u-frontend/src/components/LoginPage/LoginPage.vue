@@ -11,9 +11,9 @@
         <template #content>
           <div class="field">
             <label  style="color: white">Username <br /><br/></label>
-            <InputText  v-model="username1" id="username1"/><br /><br />
+            <InputText  v-model="username" /><br /><br />
             <label for="password1" style="color: white">Password <br /><br/></label>
-            <InputText  v-model="password" id="password1"/><br /><br /></div><br />
+            <InputText  v-model="password" /><br /><br /></div><br />
           <PrimeButton 
           label="Login" 
           class="p-button-raised p-button-secondary p-button-text:color white" 

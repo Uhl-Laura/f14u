@@ -57,6 +57,18 @@ namespace f14u_server.Controllers
                 return StatusCode(500);
             }
         }
+        [HttpGet("name/{username}")]
+        public ActionResult<string> GetStewardNameByUsername(string username)
+        {
+            try
+            {
+                return StewardService.GetStewardNameByUsername(username);
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+                return StatusCode(500);
+            }
+        }
         
 
     }

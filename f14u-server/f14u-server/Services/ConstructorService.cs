@@ -123,5 +123,15 @@ namespace f14u_server.Services
             var carComponentNames = Repository.CarComponentsRepository.GetAll().Select(item => item.Name).ToList();
             return carComponentNames;
         }
+        public string GetNameByUsername(string username)
+        {
+            var constructor = Repository.ConstructorsRepository.GetAll().Where(item => item.Username == username).FirstOrDefault();
+            return constructor.Name;
+        }
+        public string GetDriverNameByUsername(string username)
+        {
+            var driver = Repository.DriversRepository.GetAll().Where(item => item.Username == username).FirstOrDefault();
+            return driver.DriverName;
+        }
     }
 }

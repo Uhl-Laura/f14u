@@ -25,7 +25,12 @@ namespace f14u_server.Services
         public List<Penalty> ShowAllPenaltiesForADriver(string driverName)
         {
             return Repository.PenaltiesRepository.GetAll().Where(item => item.DriverName == driverName).ToList();
-        } 
+        }
+        public string GetStewardNameByUsername(string username)
+        {
+            var steward = Repository.StewardsRepository.GetAll().Where(item => item.Username == username).FirstOrDefault();
+            return steward.Name;
+        }
 
     }
 }
