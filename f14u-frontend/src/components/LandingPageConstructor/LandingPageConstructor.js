@@ -9,6 +9,9 @@ export default {
     methods: {
         showPopup: function(){
             this.$refs.carPopup.show();
+        },
+        arataPopup: function(){
+            this.$refs.driverPopup.arata();
         }
     }
-}
+}  

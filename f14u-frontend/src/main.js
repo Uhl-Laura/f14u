@@ -17,6 +17,7 @@ import InputText from 'primevue/inputtext';
 import Password from 'primevue/password';
 import CascadeSelect from 'primevue/cascadeselect';
 import CarPopup from './components/CarPopup/CarPopup.vue'
+import DriverPopup from './components/DriverPopup/DriverPopup.vue'
 import Dialog from 'primevue/dialog'
 import Dropdown from 'primevue/dropdown';
 
@@ -31,6 +32,7 @@ Vue.component("InputText",InputText);
 Vue.component("PrimePassword",Password);
 Vue.component("CascadeSelect",CascadeSelect);
 Vue.component("CarPopup", CarPopup);
+Vue.component("DriverPopup", DriverPopup);
 Vue.component("PrimeDialog", Dialog);
 Vue.component("PrimeDropdown", Dropdown);
 

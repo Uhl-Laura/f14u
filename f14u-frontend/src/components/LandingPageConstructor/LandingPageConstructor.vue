@@ -20,11 +20,11 @@
             /> 
             <CarPopup ref="carPopup"/>
              <PrimeButton 
-            label = "Driver Info"
-            @click="showPopup()"
+            label = "Delete Driver"
+            @click="arataPopup()"
             class="DriverButton"  
             />
-            <CarPopup ref="carPopup"/>
+            <DriverPopup ref="driverPopup"/>
             </div>
             </div>
             </div>
@@ -46,11 +46,11 @@
             />
             <CarPopup ref="carPopup"/>
              <PrimeButton 
-            label = "Driver Info"
-            @click="showPopup()"
+            label = "Delete Driver"
+            @click="arataPopup()"
             class="DriverButton"  
             />
-            <CarPopup ref="carPopup"/>
+            <DriverPopup ref="driverPopup"/>
             </div>
         </div>
         </div>
