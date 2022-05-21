@@ -50,28 +50,5 @@ export default{
         redirectToRegister: function() {
             this.$router.push("Register");
         },
-        // async redirectToLandingPage (){
-        //     if(this.registerVerification){
-        //     var selectedRole = await  getData(Constants.CREDENTIALS_URL + "/user/role/", this.username)
-        //     switch (selectedRole) {
-
-        //     case "driver": 
-        //         this.$router.push("Landingpagedriver")
-        //         break;
-            
-        //     case "constructor":
-        //         this.$router.push("Landingpageconstructor")
-        //         break;
-            
-        //     case "steward" :
-        //         this.$router.push("Landingpagesteward")
-        //         break;
-            
-        //     }
-            
-        // }
-        // else console.log("Account not found")
-            
-        // }
     }
 }

@@ -17,7 +17,7 @@
             <label for="password1" style="color: white"
               >Password <br /><br
             /></label>
-           <InputText  v-model="password" id="password1"/><br /><br />
+           <PrimePassword :feedback="false"  v-model="password" id="password1"/><br /><br />
           </div>
           <br />
           <PrimeButton 

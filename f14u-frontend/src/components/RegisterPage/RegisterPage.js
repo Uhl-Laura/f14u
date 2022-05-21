@@ -38,15 +38,15 @@ export default {
             this.driverRoleSelected = this.selectedRole.value == 'driver' ? true : false;
             this.constructorRoleSelected = this.selectedRole.value == 'team' ? true : false;
         },
-        register() {
-            if(this.driverRoleSelected) this.registerDriver();
-            else if(this.stewardRoleSelected) this.registerSteward();
-            else if(this.constructorRoleSelected) this.registerConstructor();
-            if(this.username && this.password && this.selectedRole){
-            this.$router.push("Login");
-            }
-            else console.log("Field can't be empty")
-            
+        async register() {
+            var statusCode = 0;
+            if(this.driverRoleSelected) statusCode = await this.registerDriver();
+            else if(this.stewardRoleSelected) statusCode = await this.registerSteward();
+            else if(this.constructorRoleSelected) statusCode = await this.registerConstructor();
+            console.log(statusCode)
+            if(statusCode == "200"){
+                this.$router.push("Login");
+            }         
         },
         async registerDriver(){
             var driverInformation = {
@@ -57,7 +57,7 @@ export default {
                 driverImageUrl: this.driverImageUrl
             }
             var response = await postData(Constants.CREDENTIALS_URL + "/register/driver", driverInformation);
-            console.log(response);
+            return response.status
         },
         async registerSteward(){
             var stewardInformation = {
@@ -66,7 +66,7 @@ export default {
                 password: this.password
             }
             var response = await postData(Constants.CREDENTIALS_URL + "/register/steward", stewardInformation);
-            console.log(response);
+            return response.status
         },
         async registerConstructor(){
             var constructorInformation = {
@@ -78,7 +78,7 @@ export default {
                 carImageUrl: this.carImageUrl
             };
             var response = await postData(Constants.CREDENTIALS_URL + "/register/constructor", constructorInformation);
-            console.log(response);
+            return response.status
         },
         async checkUsernameAvailability() {
             this.isUsernameTaken = await getData(Constants.CREDENTIALS_URL, "/users/" + this.username);
@@ -86,7 +86,6 @@ export default {
         updateDriverMessage() {
             this.driverMessage = "Your team is: " + this.selectedDriverName.teamName;
             this.displayDriverMessage = true;
-     
         },
     }
 }

@@ -18,7 +18,7 @@
                 <small v-if="isUsernameTaken" id="username" class="p-error"><br/>Username is not available.</small>
               </div>
               <h5 class="input-box-label">Password</h5>
-              <PrimePassword v-model="password"/>
+              <PrimePassword :feedback="false" v-model="password"/>
               <h5 class="input-box-label" v-if="stewardRoleSelected">Name</h5>
               <InputText v-model="stewardName" v-if="stewardRoleSelected"/>
               <h5 class="input-box-label" v-if="constructorRoleSelected">Team Name</h5>
