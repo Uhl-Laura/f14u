@@ -19,9 +19,12 @@ import CascadeSelect from 'primevue/cascadeselect';
 import CarPopup from './components/CarPopup/CarPopup.vue'
 import Dialog from 'primevue/dialog'
 import Dropdown from 'primevue/dropdown';
-
+import VueGoodTablePlugin from 'vue-good-table';
+import 'vue-good-table/dist/vue-good-table.css'
+import StewardPopup from './components/StewardPopup/StewardPopup';
 
 Vue.config.productionTip = false
+Vue.use(VueGoodTablePlugin)
 Vue.component("HeaderPage", HeaderPage);
 Vue.component("WelcomePage", WelcomePage);
 Vue.component("LoginPage", LoginPage); 
@@ -34,6 +37,7 @@ Vue.component("CascadeSelect",CascadeSelect);
 Vue.component("CarPopup", CarPopup);
 Vue.component("PrimeDialog", Dialog);
 Vue.component("PrimeDropdown", Dropdown);
+Vue.component("StewardPopup", StewardPopup)
 new Vue({
   router,
   render: h => h(App),

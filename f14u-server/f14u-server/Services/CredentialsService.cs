@@ -99,8 +99,25 @@ namespace f14u_server.Services
         }
         public string FindRoleByUsername(string username)
         {
-            var human = Repository.CredentialsRepository.GetAll().Where(item => item.Username == username).FirstOrDefault();
-            return human.Role;
+            var user = Repository.CredentialsRepository.GetAll().Where(item => item.Username == username).FirstOrDefault();
+            if (user == null)
+                return "";
+            return user.Role;
+        }
+        public string FindNameByUsername(string username)
+        {
+            var role = FindRoleByUsername(username);
+            switch (role)
+            {
+                case "steward":
+                    return Repository.StewardsRepository.GetAll().Where(item => item.Username == username).FirstOrDefault().Name;
+                case "driver":
+                    return Repository.DriversRepository.GetAll().Where(item => item.Username == username).FirstOrDefault().DriverName;
+                case "constructor":
+                    return Repository.ConstructorsRepository.GetAll().Where(item => item.Username == username).FirstOrDefault().Name;
+                default:
+                    return "";
+            }
         }
     }
 }

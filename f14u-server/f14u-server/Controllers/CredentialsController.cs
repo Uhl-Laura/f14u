@@ -112,5 +112,18 @@ namespace f14u_server.Controllers
                 return StatusCode(500);
             }
         }
+        [HttpGet("user/{username}")]
+        public ActionResult<string> GetNameByUsername(string username)
+        {
+            try
+            {
+                return CredentialsService.FindNameByUsername(username);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500);
+            }
+        }
     }
 }

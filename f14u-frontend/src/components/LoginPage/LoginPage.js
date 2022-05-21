@@ -32,18 +32,17 @@ export default{
                 
                 case "constructor":
                     {
-                    this.$router.push("Landingpageconstructor")
+                    this.$router.push({ name: "LandingPageConstructor", params: {username: this.username}})
                     break;
                     }
                 
                 case "steward" :
                     {
-                    this.$router.push("Landingpagesteward")
+                    this.$router.push({ name: "LandingPageSteward", params: {username: this.username}})
                     break;
                     }
                 
                 }
-            console.log(await response.text());
             this.$refs.username = this.username;
 
         },

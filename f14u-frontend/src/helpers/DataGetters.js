@@ -4,6 +4,13 @@ export async function getData(endpoint, filter){
     return jsonResponse
 }
 
+export async function getTextData(endpoint, filter){
+    const response = await fetch(endpoint + filter);
+    const textResponse = await response.text();
+    return textResponse
+}
+
+
 export async function postData(endpoint, data){
     var promise = fetch(endpoint, {
         method: "POST",

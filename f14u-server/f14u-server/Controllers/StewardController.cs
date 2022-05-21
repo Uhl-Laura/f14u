@@ -30,7 +30,7 @@ namespace f14u_server.Controllers
                 return StatusCode(500);
             }
         }
-        [HttpGet("Penalty/{driverName}")]
+        [HttpGet("penalty/{driverName}")]
         public ActionResult<List<Penalty>> GetAllPenalties(string driverName)
         {
             try
@@ -43,7 +43,7 @@ namespace f14u_server.Controllers
                 return StatusCode(500);
             }
         }
-        [HttpPost("Penalty")]
+        [HttpPost("penalty")]
         public async  Task<ActionResult> GivePenalty(Penalty penalty) 
         { 
             try

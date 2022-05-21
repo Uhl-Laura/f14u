@@ -14,7 +14,7 @@ namespace f14u_server.Models
         public string Id { get; set; }
         [BsonElement("carComponent")]
         public string CarComponent{get;set;}
-        [BsonElement("drivername")]
+        [BsonElement("driver")]
         public string DriverName { get; set; }
         [BsonElement("team")]
         public string TeamName { get; set; }

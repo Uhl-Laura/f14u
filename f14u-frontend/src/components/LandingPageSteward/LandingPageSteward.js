@@ -1,6 +1,5 @@
-import { getChanges } from "../../helpers/DataGetters"
 import { Constants } from "@/constants";
-import { postData } from "@/helpers/DataGetters"; 
+import { postData, getData, getTextData } from "@/helpers/DataGetters"; 
 
 export default {
     data(){
@@ -28,23 +27,27 @@ export default {
                 }
               ],
               rows: [],
+              connectedUser: null
         }
 
     },
     async mounted()
     {
-      this.rows= await getChanges()
-     console.log(this.rows);
+      this.connectedUser = await getTextData(Constants.CREDENTIALS_URL, "/user/" + this.$route.params.username);
+      if(this.connectedUser == null || this.connectedUser == ""){
+        this.$router.push("Login");
+      }
+      this.rows= await getData(Constants.STEWARD_URL, "")
     },
     methods: {
       async saveData(driverName,teamName){
         var newPenaltyInfo = {
-          stewardname: "someStewardName", 
-          drivername: driverName,
-          teamname: teamName,
+          stewardName: this.connectedUser, 
+          driverName: driverName,
+          teamName: teamName,
       };
-      var response = await postData(Constants.STEWARD_POST_URL, JSON.stringify(newPenaltyInfo));
-      console.log(response);
+      await postData(Constants.STEWARD_URL + "/penalty", newPenaltyInfo);
+      this.showPopup();
       },
       showPopup: function(){
           this.$refs.stewardPopup.show();
