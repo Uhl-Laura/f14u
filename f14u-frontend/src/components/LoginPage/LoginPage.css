@@ -37,3 +37,7 @@ body {
 .field{
     display:block;
 }
+.error{
+    color: #D8000C;
+    background-color: #FFBABA;
+}

@@ -7,7 +7,8 @@ export default{
             username: null,
             credentials: null,
             selectedRole: null,
-            password:null
+            password:null,
+            failedLogin: false
         }
 
     },
@@ -22,6 +23,8 @@ export default{
             }
             var response = await postData(Constants.CREDENTIALS_URL + "/login", credentials);
             var role = await response.text();
+            if(response.status != "200")
+                this.failedLogin = true;
             switch (role) {
            
                 case "driver": {

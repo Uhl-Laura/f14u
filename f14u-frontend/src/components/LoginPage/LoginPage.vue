@@ -19,6 +19,7 @@
             /></label>
            <PrimePassword :feedback="false"  v-model="password" id="password1"/><br /><br />
           </div>
+          <div v-if="failedLogin" class="error">Username or password are incorrect</div>
           <br />
           <PrimeButton 
           label="Login" 
