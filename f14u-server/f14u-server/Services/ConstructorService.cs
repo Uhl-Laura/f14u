@@ -39,7 +39,7 @@ namespace f14u_server.Services
                 TeamName = teamName,
                 ImageURL = imageUrl
             };
-            await Repository.DriversRepository.InsertOneAsync(driver);
+            await Repository.DriversRepository.ReplaceOneAsync(item => item.DriverName == driver.DriverName && item.TeamName == driver.TeamName, driver);
         }
         public async Task AsignConstructorCarToDriver(string teamName, string driverName, string imageURL)
         {

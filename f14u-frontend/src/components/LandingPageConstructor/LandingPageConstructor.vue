@@ -4,7 +4,7 @@
         <HeaderPage></HeaderPage>
 
         <div class="Driver">
-        <img src="https://i.imgur.com/prOm0kPh.jpg" class="DriverImage">
+        <img :src="drivers[0].imageURL" class="DriverImage">
 
            <div class="DriverInfoC">
                
@@ -29,7 +29,7 @@
             </div>
             </div>
         <div class="Driver">
-        <img src="https://i.imgur.com/prOm0kPh.jpg" class="DriverImage">
+        <img :src="drivers[1].imageURL" class="DriverImage">
 
         <div class="DriverInfoC"> 
 

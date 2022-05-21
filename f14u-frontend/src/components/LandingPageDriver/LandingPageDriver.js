@@ -1,16 +1,19 @@
 import { Constants } from "@/constants";
-import { postData } from "@/helpers/DataGetters";
+import { postData, getTextData } from "@/helpers/DataGetters";
 
 export default {
     data() {
         return {
             username: null,
-            constructorName: null
+            constructorName: null,
+            connectedUser: null
         }
     },
-    mounted(){
-     console.log(this.$route.params.username) // apelez endpoint pt a lua numele in functie de username
-     console.log(this.$route.team) 
+    async mounted(){
+        this.connectedUser = await getTextData(Constants.CREDENTIALS_URL, "/user/" + this.$route.params.username);
+        if(this.connectedUser == null || this.connectedUser == ""){
+          this.$router.push("Login");
+        } 
     },
     methods: {
      async displayImage(){

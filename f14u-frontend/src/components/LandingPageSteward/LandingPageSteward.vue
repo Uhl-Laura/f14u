@@ -27,7 +27,7 @@
         theme="vgt-table striped">
         <template slot="table-row" slot-scope="props">
             <span v-if="props.column.field == 'finalDecision' && props.row.isLegal == false">
-                <PrimeButton label="Give Penalty" @click="showPopup(), saveData(props.row.driverName, props.row.teamName)"/>
+                <PrimeButton label="Give Penalty" @click="saveData(props.row.driverName, props.row.teamName)"/>
                 <StewardPopup ref="stewardPopup"/>
             </span>
         <span v-else>
