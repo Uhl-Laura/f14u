@@ -1,7 +1,7 @@
 .Driver{
     display: flex;
     gap: 16px;
-    margin-bottom: 80px;
+    margin-bottom: 7%;
     justify-content: space-between;
 }
 
@@ -18,7 +18,8 @@
 }
 
 .DriverImage{
-    max-width: 500px;
+    max-width: 100%;
+    position: relative;
 }
 
 .DriverButton{
@@ -29,6 +30,27 @@
 
 .DriverText{
     flex: 1;
-    width: 350px;
-    background-color: white;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    color: white
 }
+
+.image-container {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .driver-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+  }
+  .car-image {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+  }

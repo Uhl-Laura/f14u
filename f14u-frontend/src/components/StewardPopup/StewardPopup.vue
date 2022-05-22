@@ -11,4 +11,7 @@
     </div>
 </template>
 <script src="./StewardPopup.js" type="module">
+    export default {
+        name: 'StewardPopup'
+    }
 </script>

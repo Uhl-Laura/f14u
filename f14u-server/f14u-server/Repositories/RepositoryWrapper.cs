@@ -10,13 +10,13 @@ namespace f14u_server.Repositories
     public class RepositoryWrapper : IRepositoryWrapper
     {
         public ICredentialsRepository CredentialsRepository{ get; set; }
-        public IPenaltiesRepository PenaltiesRepository { get; set; }
         public IConstructorsRepository ConstructorsRepository { get; set; }
         public IDriversRepository DriversRepository { get; set; }
         public IStewardsRepository StewardsRepository { get; set; }
         public ICarsRepository CarsRepository { get; set; }
         public IChangeRepository ChangeRepository { get; set; }
         public ICarComponentsRepository CarComponentsRepository { get; set; }
+        public IPenaltiesRepository PenaltiesRepository { get; set; }
         public RepositoryWrapper()
         {
             var client = new MongoClient(EnvironmentVariables.connectionString);
@@ -30,6 +30,7 @@ namespace f14u_server.Repositories
             CarsRepository = new CarsRepository(database.GetCollection<Car>(EnvironmentVariables.carsTableName));
             CarComponentsRepository = new CarComponentsRepository(database.GetCollection<CarComponent>(EnvironmentVariables.carComponentsTableName));
             ChangeRepository = new ChangeRepository(database.GetCollection<Change>(EnvironmentVariables.ChangeTableName));
+            PenaltiesRepository = new PenaltiesRepository(database.GetCollection<Penalty>(EnvironmentVariables.PenaltiesTableName));
         }
     }
 }

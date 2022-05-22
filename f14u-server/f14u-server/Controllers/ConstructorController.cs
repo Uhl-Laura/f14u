@@ -31,6 +31,19 @@ namespace f14u_server.Controllers
             return null;
 
         }
+        [HttpGet("Changes/{driverName}")]
+        public ActionResult<List<Change>> GetChangesForACar(string driverName)
+        {
+            try
+            {
+                return ConstructorService.GetChangesForACar(driverName);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500);
+            }
+        }
         [HttpPost("Drivers/{driverName}")]
         public async Task<ActionResult> ChangeDriver(Driver driver, string driverName)
         {
@@ -61,7 +74,7 @@ namespace f14u_server.Controllers
             }
 
         }
-        [HttpGet("CarComponents/{driverName}")]
+        [HttpGet("Car/{driverName}")]
         public ActionResult<Car> CarInformation(string driverName)
         {
             try

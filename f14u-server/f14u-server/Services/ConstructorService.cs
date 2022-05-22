@@ -139,5 +139,9 @@ namespace f14u_server.Services
         {
             return Repository.DriversRepository.GetAll().Where(item => item.DriverName == driverName).FirstOrDefault();
         }
+        public List<Change> GetChangesForACar(string driverName)
+        {
+            return Repository.ChangeRepository.GetAll().Where(item => item.DriverName == driverName).ToList();
+        }
     }
 }
