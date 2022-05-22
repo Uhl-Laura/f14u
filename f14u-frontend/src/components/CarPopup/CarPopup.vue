@@ -1,29 +1,16 @@
 <template>
     <div>
         <PrimeDialog position="top" :visible="addPopup"  >
-            
             <template #header>
                 <h4>Car Popup </h4>
             </template>
-              <div>
-                <CascadeSelect @click="availableComponents"
-                  v-model="selectedComponent" :options="component" optionLabel="component" optionGroupLabel="team" :optionGroupChildren="['team']"
-                  style="width: 17rem; margin-bottom: 20em; height: 2rem"
-                  placeholder="Select a component" >
-                  <template #option="slotProps">
-                    <div class="country-item">
-                      <i
-                        v-if="slotProps.option.component"
-                      ></i>
-                      <span>{{
-                        slotProps.option.component
-                      }}</span>
-                    </div>
-                  </template>
-                </CascadeSelect>
+            <div>
+              <PrimeDropdown v-model="selectedComponent" :options="component" optionLabel="name" placeholder="Select a component"
+                            style="width: 20rem; margin-bottom: 18em; height: 2.5rem"/>
             </div>
             <template #footer>
-                <PrimeButton label="Submit" @click="cancel()"/>
+                <PrimeButton label="Close pop-up" @click="cancel()"/>
+                <PrimeButton label="Change Component" @click ="changeComponent()"/>
             </template>
         </PrimeDialog >
     </div >

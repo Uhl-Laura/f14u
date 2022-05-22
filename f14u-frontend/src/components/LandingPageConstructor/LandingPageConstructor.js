@@ -23,10 +23,12 @@ export default {
 
         this.cars.push(await getData(Constants.CONSTRUCTOR_URL + "/Car/", this.drivers[0].driverName));
         this.cars.push(await getData(Constants.CONSTRUCTOR_URL + "/Car/", this.drivers[1].driverName));
+        console.log(this.drivers[0].driverName);
     },
     methods: {
-        showPopup: function(){
-            this.$refs.carPopup.show();
+        showPopup: function(driverName){
+            this.$refs.carPopup.show(driverName);
+            console.log(driverName);
         },
         async getDriverInformation(driverName) {
             var changes = await getData(Constants.CONSTRUCTOR_URL + "/changes/", driverName);
@@ -53,6 +55,9 @@ export default {
                 "car": driverCarInformation,
                 "penalty": driverPenaltyInformation
             })
+        },
+        showDriverChange:function(){
+            this.$refs.DriverChangePopup.showPopup();
         }
     }
 }

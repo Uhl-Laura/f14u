@@ -16,16 +16,16 @@
         <div class="doubleB">
           <PrimeButton
             label="Car Info"
-            @click="showPopup()"
+            @click="showPopup(drivers[0].driverName)"
             class="DriverButton"
           />
           <CarPopup ref="carPopup" />
           <PrimeButton
-            label="Driver Info"
-            @click="showPopup()"
+            label="Change Driver"
+            @click="showDriverChange()"
             class="DriverButton"
           />
-          <CarPopup ref="carPopup" />
+          <DriverChange ref="DriverChangePopup" />
         </div>
       </div>
     </div>
@@ -42,16 +42,16 @@
         <div class="doubleB">
           <PrimeButton
             label="Car Info"
-            @click="showPopup()"
+            @click="showPopup(drivers[1].driverName)"
             class="DriverButton"
           />
           <CarPopup ref="carPopup" />
           <PrimeButton
-            label="Driver Info"
-            @click="showPopup()"
+            label="Change Driver"
+            @click="showDriverChange()"
             class="DriverButton"
           />
-          <CarPopup ref="carPopup" />
+          <DriverChange ref="DriverChangePopup" />
         </div>
       </div>
     </div>
