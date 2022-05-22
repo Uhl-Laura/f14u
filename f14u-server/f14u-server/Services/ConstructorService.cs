@@ -38,7 +38,19 @@ namespace f14u_server.Services
                 Username = username,
                 TeamName = teamName,
                 ImageURL = imageUrl
+
             };
+            var driverInDataBase = Repository.DriversRepository.GetAll().Where(item => item.DriverName == driver.DriverName && item.TeamName == driver.TeamName).FirstOrDefault();
+            if(driverInDataBase == null)
+            {
+                await Repository.DriversRepository.InsertOneAsync(driver);
+            }
+            else
+            {
+                await Repository.DriversRepository.DeleteManyAsync(item => item.DriverName == driverInDataBase.DriverName);
+                await Repository.DriversRepository.InsertOneAsync(driver);
+
+            }
             await Repository.DriversRepository.ReplaceOneAsync(item => item.DriverName == driver.DriverName && item.TeamName == driver.TeamName, driver);
         }
         public async Task AsignConstructorCarToDriver(string teamName, string driverName, string imageURL)
@@ -122,6 +134,10 @@ namespace f14u_server.Services
         {
             var carComponentNames = Repository.CarComponentsRepository.GetAll().Select(item => item.Name).ToList();
             return carComponentNames;
+        }
+        public Driver GetDriverInformationByName(string driverName)
+        {
+            return Repository.DriversRepository.GetAll().Where(item => item.DriverName == driverName).FirstOrDefault();
         }
     }
 }

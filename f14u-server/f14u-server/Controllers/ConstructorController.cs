@@ -74,7 +74,7 @@ namespace f14u_server.Controllers
                 return StatusCode(500);
             }
         }
-        [HttpGet("CarComponents/{driverName}")]
+        [HttpGet("Components/{driverName}")]
         public ActionResult<List<CarComponent>> GetCarComponentsForADriver(string driverName)
         {
             try
@@ -83,6 +83,18 @@ namespace f14u_server.Controllers
 
             }
             catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return StatusCode(500);
+            }
+        }
+        [HttpGet("DriverInformation/{drivername}")]
+        public ActionResult<Driver> GetDriverInformationByName(string drivername)
+        {
+            try
+            {
+                return ConstructorService.GetDriverInformationByName(drivername);
+            }catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 return StatusCode(500);
