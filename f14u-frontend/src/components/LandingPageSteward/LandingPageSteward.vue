@@ -1,17 +1,3 @@
-<script>
-    import HeaderPage from '../HeaderPage/HeaderPage.vue'
-    import 'vue-good-table/dist/vue-good-table.css'
-    import { VueGoodTable } from 'vue-good-table'
-    import StewardPopup from '../StewardPopup/StewardPopup.vue'
-    export default {
-      components: {
-        VueGoodTable,
-        HeaderPage,
-        StewardPopup
-      }
-    }
-</script>
-
 <template>
     <div>
       <div>
@@ -23,7 +9,7 @@
         :responsive="true"
         :lineNumbers="false"
         :fixed-header="true"
-        max-height="200px"
+        max-height="100%"
         theme="vgt-table striped">
         <template slot="table-row" slot-scope="props">
             <span v-if="props.column.field == 'finalDecision' && props.row.isLegal == false">

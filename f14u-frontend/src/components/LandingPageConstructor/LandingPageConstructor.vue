@@ -21,11 +21,12 @@
           />
           <CarPopup ref="carPopup" />
           <PrimeButton
-            label="Change Driver"
-            @click="showDriverChange()"
+            label="Components"
+            @click="showComponentsPopup(0)"
             class="DriverButton"
+            style="width: 150%"
           />
-          <DriverChange ref="DriverChangePopup" />
+          <DriverPopup ref="driverPopup" />
         </div>
       </div>
     </div>
@@ -47,11 +48,12 @@
           />
           <CarPopup ref="carPopup" />
           <PrimeButton
-            label="Change Driver"
-            @click="showDriverChange()"
+            label="Components"
+            @click="showComponentsPopup(1)"
             class="DriverButton"
+            style="width: 150%"
           />
-          <DriverChange ref="DriverChangePopup" />
+          <DriverPopup ref="driverPopup" />
         </div>
       </div>
     </div>

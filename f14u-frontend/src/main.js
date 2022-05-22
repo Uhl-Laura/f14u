@@ -22,7 +22,9 @@ import Dropdown from 'primevue/dropdown';
 import VueGoodTablePlugin from 'vue-good-table';
 import 'vue-good-table/dist/vue-good-table.css'
 import StewardPopup from './components/StewardPopup/StewardPopup.vue';
-import DriverChange from './components/DriverChange/DriverChange.vue';
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
+import DriverPopup from './components/DriverPopup/DriverPopup.vue';
 
 Vue.config.productionTip = false
 Vue.use(VueGoodTablePlugin)
@@ -39,7 +41,9 @@ Vue.component("CarPopup", CarPopup);
 Vue.component("PrimeDialog", Dialog);
 Vue.component("PrimeDropdown", Dropdown);
 Vue.component("StewardPopup", StewardPopup);
-Vue.component("DriverChange",DriverChange);
+Vue.component("DataTable", DataTable);
+Vue.component("TableColumn", Column);
+Vue.component("DriverPopup", DriverPopup);
 new Vue({
   router,
   render: h => h(App),

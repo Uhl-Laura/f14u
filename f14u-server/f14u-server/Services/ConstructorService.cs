@@ -92,7 +92,7 @@ namespace f14u_server.Services
             Change change = new Change
             {
                 CarComponent = carComponent.Name,
-                DriverName = driverName,
+                DriverName = carComponent.Driver,
                 TeamName = carComponent.Team,
             };
             componentToChange.AvailabilityCount--;
@@ -108,9 +108,10 @@ namespace f14u_server.Services
         public async Task ChangeDriver(string driverName, Driver driver)
         {
             var driverToChange = Repository.DriversRepository.GetAll().Where(item => item.DriverName == driverName).FirstOrDefault();
-            if (driverToChange == null) 
+            var carToChange = Repository.CarsRepository.GetAll().Where(item => item.Driver == driverName && item.Team == driver.TeamName).FirstOrDefault();
+            if (driverToChange == null || carToChange == null) 
             {
-                Console.WriteLine("There is no driver with this name in the Database");
+                Console.WriteLine("There is no driver or car with this name in the Database");
             }
             else
             {

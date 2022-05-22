@@ -28,7 +28,7 @@ export default {
             console.log(this.currentCar)
         },
         showPopup: function () {
-            this.$refs.carPopup.show();
+            this.$refs.driverPopup.show(this.connectedUser);
         },
         async getDriverInformation() {
             var changes = await getData(Constants.CONSTRUCTOR_URL + "/changes/", this.connectedUser);

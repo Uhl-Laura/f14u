@@ -12,7 +12,7 @@
           @click="showPopup()"
           class="DriverButton"
         />
-        <CarPopup ref="carPopup" />
+        <DriverPopup ref="driverPopup" />
       </div>
     </div>
   </div>

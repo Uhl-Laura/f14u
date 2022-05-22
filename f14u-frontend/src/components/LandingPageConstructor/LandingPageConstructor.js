@@ -15,20 +15,18 @@ export default {
         if(this.connectedUser == null || this.connectedUser == ""){
           this.$router.push("Login");
         }
-
         this.drivers = await getData(Constants.CONSTRUCTOR_URL, "/drivers/" + this.connectedUser);
-        this.drivers.sort();
+        // this.drivers.sort();
         this.getDriverInformation(this.drivers[0].driverName);
         this.getDriverInformation(this.drivers[1].driverName);
 
         this.cars.push(await getData(Constants.CONSTRUCTOR_URL + "/Car/", this.drivers[0].driverName));
         this.cars.push(await getData(Constants.CONSTRUCTOR_URL + "/Car/", this.drivers[1].driverName));
-        console.log(this.drivers[0].driverName);
+        console.log(this.cars);
     },
     methods: {
         showPopup: function(driverName){
             this.$refs.carPopup.show(driverName);
-            console.log(driverName);
         },
         async getDriverInformation(driverName) {
             var changes = await getData(Constants.CONSTRUCTOR_URL + "/changes/", driverName);
@@ -56,8 +54,8 @@ export default {
                 "penalty": driverPenaltyInformation
             })
         },
-        showDriverChange:function(){
-            this.$refs.DriverChangePopup.showPopup();
-        }
+        showComponentsPopup(driverIndex){
+            this.$refs.driverPopup.show(this.drivers[driverIndex].driverName);
+        },
     }
 }

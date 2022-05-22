@@ -36,8 +36,10 @@ export default {
         async changeComponent(){
             var componentToChange = this.returnTheComponentObject(this.selectedComponent);
             var response = await postData( Constants.CONSTRUCTOR_URL +"/CarComponents/"+ this.driveName,componentToChange);
-            console.log(componentToChange);
-            console.log(response.status);
+            if(response.status == "200"){
+                this.cancel();
+            }
+
         },
         cancel(){
             this.addPopup = false;
